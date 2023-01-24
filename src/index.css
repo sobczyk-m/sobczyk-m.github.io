@@ -36,6 +36,30 @@ a > i:hover {
     color: var(--green-4);
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.wrapper > h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.wrapper > h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.wrapper > p {
+    text-align: justify;
+    font-size: 1.5rem;
+    max-width: 680px;
+    margin-bottom: 2rem;
+}
+
 #hello, #introduction-1, #introduction-2 {
     margin-left: 10%;
     margin-bottom: 2rem;
@@ -56,10 +80,11 @@ a > i:hover {
 
 .text-highlight {
     color: var(--green-4);
+    font-weight: bold;
 }
 
 #header {
-    margin: 4rem 0 15rem 0;
+    margin: 2rem 0 10rem 0;
 }
 
 .navbar {
