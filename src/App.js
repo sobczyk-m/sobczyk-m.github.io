@@ -1,6 +1,8 @@
 import './App.css'
 import Navbar from "./Navbar"
 import SocialLinks from "./SocialLinks"
+// import dude from "./programmingDude.svg"
+
 
 function App() {
     return (
@@ -14,7 +16,8 @@ function App() {
                 <div id={"introduction-2"}><h3>I am self taught Front-End Developer</h3></div>
             </div>
             <footer className={"home-footer"}>
-            <SocialLinks/>
+                <SocialLinks/>
+                <i id={"secret-programmer"} className="fa-solid fa-user-secret"></i>
             </footer>
         </div>
     )
