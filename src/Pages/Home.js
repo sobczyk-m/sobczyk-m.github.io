@@ -1,10 +1,7 @@
-import './App.css'
-import Navbar from "./Navbar"
-import SocialLinks from "./SocialLinks"
-// import dude from "./programmingDude.svg"
+import Navbar from "../Components/Navbar"
+import SocialLinks from "../Components/SocialLinks"
 
-
-function App() {
+function Home() {
     return (
         <div>
             <header id="header">
@@ -12,7 +9,8 @@ function App() {
             </header>
             <div id={"home-container"}>
                 <div id={"hello"}><h1>Hi there,</h1></div>
-                <div id={"introduction-1"}><h2>My name is <span className={"text-highlight"}>Marcin Sobczyk</span></h2></div>
+                <div id={"introduction-1"}><h2>My name is <span className={"text-highlight"}>Marcin Sobczyk</span></h2>
+                </div>
                 <div id={"introduction-2"}><h3>I am self taught Front-End Developer</h3></div>
             </div>
             <footer className={"home-footer"}>
@@ -23,4 +21,4 @@ function App() {
     )
 }
 
-export default App
+export default Home
