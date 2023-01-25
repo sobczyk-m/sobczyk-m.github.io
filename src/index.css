@@ -36,28 +36,53 @@ a > i:hover {
     color: var(--green-4);
 }
 
-.wrapper {
+.short-wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 10%;
 }
 
-.wrapper > h1 {
+.wide-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 10%;
+}
+
+.message-container {
+    margin-right: 2rem;
+}
+
+.short-wrapper > h1 {
+    text-align: center;
+}
+
+.short-wrapper > h1, .message-container > h1  {
     font-size: 3rem;
     margin-bottom: 3rem;
 }
 
-.wrapper > h2 {
+.short-wrapper > h2, .message-container > h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
 }
 
-.wrapper > p {
+.short-wrapper > p {
+    max-width: 680px;
+}
+
+.short-wrapper > p {
     text-align: justify;
     font-size: 1.5rem;
-    max-width: 680px;
     margin-bottom: 2rem;
+}
+
+.message-container > p {
+    max-width: 800px;
+    text-align: justify;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    white-space: pre-line;
 }
 
 #hello, #introduction-1, #introduction-2 {
@@ -93,8 +118,12 @@ a > i:hover {
     padding: 0 3rem;
 }
 
+.social-links {
+    display: inline-block;
+    padding: 1rem 0;
+}
 
-.navbar > ul, .social-links > ul {
+.navbar > ul, .social-links > ul{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -102,10 +131,6 @@ a > i:hover {
     gap: 3rem;
 }
 
-.social-links {
-    display: inline-block;
-    padding: 1rem 0;
-}
 
 .social-links > ul {
     gap: 2rem;
@@ -131,4 +156,26 @@ a > i:hover {
     /*    font-size: 1rem;*/
     /*}*/
 
+}
+
+@media (width < 1300px) {
+    .image {
+        height: 400px;
+    }
+}
+
+
+@media (width < 1100px) {
+    .wide-wrapper {
+        flex-direction: column;
+    }
+
+    .message-container > h1 {
+        text-align: center;
+    }
+
+    .image {
+        margin: 0 auto;
+        width: auto;
+    }
 }
