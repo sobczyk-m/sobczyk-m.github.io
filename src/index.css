@@ -15,6 +15,7 @@
     --silver-2: #8392a5;
     --gray-1: #d1d3d7;
     --gray-2: #a6a095;
+    --gray-3: #464646;
 }
 
 body {
@@ -47,6 +48,7 @@ a > i:hover, li > i:hover {
     display: flex;
     justify-content: space-evenly;
     padding: 0 10%;
+    margin-bottom: 10%;
 }
 
 .message-container {
@@ -135,6 +137,28 @@ a > i:hover, li > i:hover {
     gap: 3rem;
 }
 
+.tech-stack > ul > li > i:hover .tech-name {
+    display: block;
+}
+
+.tech-name-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.tech-name {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    position: absolute;
+    display: none;
+    font-size: 1.3rem;
+    color: var(--gray-1);
+    background-color: var(--gray-3);
+    padding: 3px 15px;
+    margin: 1rem 0 0 0;
+    border-radius: 16px;
+}
+
 .tech-stack > ul {
     font-size: 5rem;
     justify-content: space-evenly;
@@ -150,6 +174,7 @@ a > i:hover, li > i:hover {
     width: auto;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10%;
 }
 
 #secret-programmer {
