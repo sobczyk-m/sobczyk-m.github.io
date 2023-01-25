@@ -50,7 +50,7 @@ a > i:hover {
 }
 
 .message-container {
-    margin-right: 2rem;
+    margin-right: 4rem;
 }
 
 .short-wrapper > h1 {
@@ -131,7 +131,6 @@ a > i:hover {
     gap: 3rem;
 }
 
-
 .social-links > ul {
     gap: 2rem;
 }
@@ -149,6 +148,11 @@ a > i:hover {
     font-size: 23rem;
 }
 
+.image {
+    height: 440px;
+    margin-top: 6.2rem;
+}
+
 
 @media (width < 680px) {
 
@@ -158,24 +162,38 @@ a > i:hover {
 
 }
 
-@media (width < 1300px) {
+@media (width < 1350px) {
     .image {
         height: 400px;
     }
 }
 
+@media (width < 1280px) {
+    .image {
+        height: 350px;
+    }
+}
 
-@media (width < 1100px) {
+@media (width < 1180px) {
     .wide-wrapper {
         flex-direction: column;
+    }
+
+    .message-container {
+        margin-right: 0;
     }
 
     .message-container > h1 {
         text-align: center;
     }
 
+    .message-container > p {
+        max-width: 100%;
+    }
+
     .image {
-        margin: 0 auto;
+        margin: 2rem auto;
+        height: 600px;
         width: auto;
     }
 }
