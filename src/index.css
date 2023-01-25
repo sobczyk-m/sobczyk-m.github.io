@@ -32,11 +32,11 @@ i {
     color: inherit;
 }
 
-a > i:hover {
+a > i:hover, li > i:hover {
     color: var(--green-4);
 }
 
-.short-wrapper{
+.short-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,7 +57,7 @@ a > i:hover {
     text-align: center;
 }
 
-.short-wrapper > h1, .message-container > h1  {
+.short-wrapper > h1, .message-container > h1 {
     font-size: 3rem;
     margin-bottom: 3rem;
 }
@@ -118,17 +118,26 @@ a > i:hover {
     padding: 0 3rem;
 }
 
-.social-links {
+.tech-stack {
+    width: 100%;
+}
+
+.social-links, .tech-stack {
     display: inline-block;
     padding: 1rem 0;
 }
 
-.navbar > ul, .social-links > ul{
+.navbar > ul, .social-links > ul, .tech-stack > ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 3rem;
+}
+
+.tech-stack > ul {
+    font-size: 5rem;
+    justify-content: space-evenly;
 }
 
 .social-links > ul {

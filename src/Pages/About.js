@@ -22,6 +22,7 @@ function About() {
                     <p>I'm looking for professional opportunities in developer positions that will allow me to work on
                         interesting Front-End projects.</p>
                     <p>My Tech Stack:</p>
+                    <TechStack/>
                 </div>
                 <img className={"image"} src={authorPhoto} height={"500px"} alt="Photo of website author"/>
             </div>
