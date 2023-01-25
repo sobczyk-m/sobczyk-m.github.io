@@ -160,6 +160,10 @@ a > i:hover, li > i:hover {
 .image {
     height: 440px;
     margin-top: 6.2rem;
+    padding: 5px;
+    border: 1px solid var(--gray-1);
+    border-radius: 1rem;
+    opacity: 0.8;
 }
 
 
