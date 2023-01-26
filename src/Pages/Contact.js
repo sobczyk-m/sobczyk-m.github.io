@@ -8,7 +8,7 @@ function Contact() {
                 <p><span className={"text-highlight"}>I'm looking for new job opportunities</span>. Hit me up
                     if you have some questions or want to work together. I'll try to get back to you as soon as I can.
                 </p>
-                <h2>Here are my Socials</h2>
+                <h2>Here are my socials:</h2>
                 <footer>
                     <SocialLinks/>
                 </footer>

@@ -165,7 +165,8 @@ a > i:hover, li > i:hover {
 }
 
 .social-links > ul {
-    gap: 2rem;
+    gap: 4rem;
+    font-size: 5rem;
 }
 
 .home-footer {
@@ -173,7 +174,7 @@ a > i:hover, li > i:hover {
     margin-right: 10%;
     width: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     margin-bottom: 10%;
 }
 
