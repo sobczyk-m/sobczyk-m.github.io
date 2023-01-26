@@ -1,4 +1,3 @@
-import SocialLinks from "../Components/SocialLinks"
 
 function Home() {
     return (
@@ -10,7 +9,6 @@ function Home() {
                 <div id={"introduction-2"}><h3>I am self taught Front-End Developer</h3></div>
             </div>
             <footer className={"home-footer"}>
-                <SocialLinks/>
                 <i id={"secret-programmer"} className="fa-solid fa-user-secret"></i>
             </footer>
         </div>
