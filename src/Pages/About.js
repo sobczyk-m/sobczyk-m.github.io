@@ -1,4 +1,4 @@
-import authorPhoto from "../author-photo.jpg"
+import authorPhoto from "../images/author-photo.jpg"
 import TechStack from "../Components/TechStack"
 
 function About() {
