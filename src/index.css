@@ -187,10 +187,111 @@ a > i:hover, li > i:hover {
     margin-top: 6.2rem;
     padding: 5px;
     border: 1px solid var(--gray-1);
-    border-radius: 1rem;
+    border-radius: 16px;
     opacity: 0.8;
 }
 
+.projects-wrapper {
+    margin-bottom: 10%;
+}
+
+.projects-wrapper > h1 {
+    font-size: 3rem;
+    margin-left: 14%;
+    margin-bottom: 48px;
+}
+
+.projects-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    position: relative;
+    width: 450px;
+    height: 400px;
+    list-style-type: none;
+}
+
+.project-header, .project-description {
+    text-align: center;
+}
+
+.project-description {
+    font-size: 1.3rem;
+}
+
+.project-tech-stacks-container {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-header, .project-description, .project-tech-stacks-container {
+    display: none;
+    padding: 20px 30px 0 30px;
+}
+
+.project-tech-stack {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--gray-1);
+    background-color: var(--green-1);
+    padding: 10px 15px;
+    margin: 2px;
+    border-radius: 32px;
+}
+
+.project-tech-stack:hover {
+    color: var(--black-1);
+    background-color: var(--green-3);
+}
+
+.project-image {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0.8;
+    border-radius: 32px;
+}
+
+.project-bottom-bar {
+    position: absolute;
+    display: none;
+    justify-content: flex-end;
+    gap: 20px;
+    width: 100%;
+    bottom: 0;
+    padding: 10px 40px 30px 0;
+}
+
+.project-icon {
+    font-size: 2rem;
+    color: #fbb02d;
+    padding: 12px;
+}
+
+.project-icon:hover {
+    color: var(--green-3);
+    background-color: var(--black-1);
+    padding: 12px;
+    border-radius: 15px;
+}
+
+.project:hover .project-description, .project:hover .project-header {
+    display: block;
+}
+
+.project:hover .project-tech-stacks-container, .project:hover .project-bottom-bar {
+    display: flex;
+}
+
+.project:hover .project-image {
+    opacity: 0.08;
+}
 
 @media (width < 680px) {
 
@@ -233,5 +334,20 @@ a > i:hover, li > i:hover {
         margin: 2rem auto;
         height: 600px;
         width: auto;
+    }
+}
+
+@media (width < 1050px) {
+    .projects-wrapper > h1 {
+        text-align: center;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+@media (width < 870px) {
+    .project {
+        margin-right: 2%;
+        margin-left: 2%;
     }
 }
