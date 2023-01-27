@@ -18,7 +18,7 @@
     --orange: #fbb02d;
 }
 
-body {
+html {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
     background-color: var(--black-1);
     color: var(--gray-1);
