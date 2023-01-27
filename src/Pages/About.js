@@ -4,10 +4,9 @@ import TechStack from "../Components/TechStack"
 function About() {
     return (
         <div>
-            <div className={"wide-wrapper"}>
+            <div className={"bio-wrapper"}>
                 <div className={"message-container"}>
                     <h1>{"< "}Hello World{" />"}</h1>
-                    <span className={"text-highlight"}></span>
                     <p>
                         Hi! I'm Marcin. Just some random guy that loves technology, solving problems and creating stuff.
                         One day I combined these three factors together and found myself on the programmer path.

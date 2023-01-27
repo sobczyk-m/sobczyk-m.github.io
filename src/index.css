@@ -5,7 +5,6 @@
 }
 
 :root {
-    --brown-1: #391b00;
     --black-1: #222325;
     --green-1: #008e6b;
     --green-2: #5bf2ce;
@@ -16,6 +15,7 @@
     --gray-1: #d1d3d7;
     --gray-2: #a6a095;
     --gray-3: #464646;
+    --orange: #fbb02d;
 }
 
 body {
@@ -37,14 +37,14 @@ a > i:hover, li > i:hover {
     color: var(--green-4);
 }
 
-.short-wrapper {
+.contact-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 10%;
 }
 
-.wide-wrapper {
+.bio-wrapper {
     display: flex;
     justify-content: space-evenly;
     padding: 0 10%;
@@ -55,41 +55,42 @@ a > i:hover, li > i:hover {
     margin-right: 4rem;
 }
 
-.short-wrapper > h1 {
+.contact-wrapper > h1 {
     text-align: center;
 }
 
-.short-wrapper > h1, .message-container > h1 {
+.contact-wrapper > h1, .message-container > h1 {
     font-size: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 48px;
 }
 
-.short-wrapper > h2, .message-container > h2 {
+.contact-wrapper > h2, .message-container > h2 {
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 32px;
 }
 
-.short-wrapper > p {
+.contact-wrapper > p {
     max-width: 680px;
 }
 
-.short-wrapper > p {
+.contact-wrapper > p {
     text-align: justify;
     font-size: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 32px;
 }
 
 .message-container > p {
     max-width: 800px;
     text-align: justify;
     font-size: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 32px;
     white-space: pre-line;
 }
 
 #hello, #introduction-1, #introduction-2 {
     margin-left: 10%;
-    margin-bottom: 2rem;
+    margin-right: 10%;
+    margin-bottom: 32px;
 }
 
 #hello > h1 {
@@ -97,7 +98,7 @@ a > i:hover, li > i:hover {
 }
 
 #introduction-1 > h2 {
-    font-size: 3rem;
+    font-size: 48px;
 }
 
 #introduction-2 > h3 {
@@ -111,13 +112,13 @@ a > i:hover, li > i:hover {
 }
 
 #header {
-    margin: 2rem 0 10rem 0;
+    margin: 32px 0 160px 0;
 }
 
 .navbar {
     font-size: 2rem;
     font-weight: bold;
-    padding: 0 3rem;
+    padding: 0 18px;
 }
 
 .tech-stack {
@@ -126,7 +127,7 @@ a > i:hover, li > i:hover {
 
 .social-links, .tech-stack {
     display: inline-block;
-    padding: 1rem 0;
+    padding: 16px 0;
 }
 
 .navbar > ul, .social-links > ul, .tech-stack > ul {
@@ -155,7 +156,7 @@ a > i:hover, li > i:hover {
     color: var(--gray-1);
     background-color: var(--gray-3);
     padding: 3px 15px;
-    margin: 1rem 0 0 0;
+    margin: 16px 0 0 0;
     border-radius: 16px;
 }
 
@@ -185,7 +186,7 @@ a > i:hover, li > i:hover {
 
 .image {
     height: 440px;
-    margin-top: 6.2rem;
+    margin-top: 99px;
     padding: 5px;
     border: 1px solid var(--gray-1);
     border-radius: 16px;
@@ -197,7 +198,7 @@ a > i:hover, li > i:hover {
 }
 
 .projects-wrapper > h1 {
-    font-size: 3rem;
+    font-size: 48px;
     margin-left: 14%;
     margin-bottom: 48px;
 }
@@ -271,7 +272,7 @@ a > i:hover, li > i:hover {
 
 .project-icon {
     font-size: 2rem;
-    color: #fbb02d;
+    color: var(--orange);
     padding: 12px;
 }
 
@@ -294,14 +295,6 @@ a > i:hover, li > i:hover {
     opacity: 0.08;
 }
 
-@media (width < 680px) {
-
-    /*.navbar {*/
-    /*    font-size: 1rem;*/
-    /*}*/
-
-}
-
 @media (width < 1350px) {
     .image {
         height: 400px;
@@ -315,7 +308,7 @@ a > i:hover, li > i:hover {
 }
 
 @media (width < 1180px) {
-    .wide-wrapper {
+    .bio-wrapper {
         flex-direction: column;
     }
 
@@ -333,7 +326,7 @@ a > i:hover, li > i:hover {
 
     .image {
         margin: 2rem auto;
-        height: 600px;
+        height: 500px;
         width: auto;
     }
 }
@@ -350,5 +343,79 @@ a > i:hover, li > i:hover {
     .project {
         margin-right: 2%;
         margin-left: 2%;
+    }
+}
+
+@media (width < 700px) {
+    .social-links > ul {
+        font-size: 3rem;
+    }
+
+}
+
+@media (width < 470px) {
+    .navbar {
+        font-size: 1.5rem;
+    }
+
+    .image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .message-container > h1, .contact-wrapper > h1, .contact-wrapper > h2, .projects-wrapper > h1 {
+        font-size: 2rem;
+    }
+
+    .message-container > p, .contact-wrapper > p {
+        font-size: 1.3rem;
+    }
+
+    #hello > h1 {
+        font-size: 1.1rem;
+    }
+
+    #introduction-1 > h2 {
+        font-size: 1.7rem;
+    }
+
+    #introduction-2 > h3 {
+        font-size: 1.3rem;
+    }
+
+    .home-footer {
+        justify-content: center;
+    }
+
+    #secret-programmer {
+        font-size: 15rem;
+    }
+
+    .project {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media (width < 390px) {
+    .tech-stack > ul {
+        font-size: 3rem;
+    }
+
+    .project {
+        width: 100%;
+        height: 230px;
+    }
+
+    .message-container > h1, .contact-wrapper > h1, .contact-wrapper > h2, .projects-wrapper > h1 {
+        font-size: 1.5rem;
+    }
+
+    #introduction-1 > h2 {
+        font-size: 1.5rem;
+    }
+
+    .message-container > p, .contact-wrapper > p {
+        font-size: 1.2rem;
     }
 }
