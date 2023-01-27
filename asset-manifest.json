@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.706ba8fa.css",
+    "main.css": "./static/css/main.d5343ebb.css",
     "main.js": "./static/js/main.dc8622fc.js",
     "static/js/787.749b4a44.chunk.js": "./static/js/787.749b4a44.chunk.js",
     "static/media/author-photo.jpg": "./static/media/author-photo.16fd2fd9891e047697c2.jpg",
@@ -8,12 +8,12 @@
     "static/media/Drum-Machine.png": "./static/media/Drum-Machine.36e1fc631dd8125ae3e5.png",
     "static/media/Quote-Machine.png": "./static/media/Quote-Machine.3deb2fea7810ab4d3ca3.png",
     "index.html": "./index.html",
-    "main.706ba8fa.css.map": "./static/css/main.706ba8fa.css.map",
+    "main.d5343ebb.css.map": "./static/css/main.d5343ebb.css.map",
     "main.dc8622fc.js.map": "./static/js/main.dc8622fc.js.map",
     "787.749b4a44.chunk.js.map": "./static/js/787.749b4a44.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.706ba8fa.css",
+    "static/css/main.d5343ebb.css",
     "static/js/main.dc8622fc.js"
   ]
 }
