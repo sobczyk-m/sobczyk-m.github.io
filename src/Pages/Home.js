@@ -1,7 +1,12 @@
+import Navbar from "../Components/Navbar"
+import React from "react"
 
 function Home() {
     return (
         <div>
+            <header id="header">
+                < Navbar active={"nav-home"}/>
+            </header>
             <div id={"home-container"}>
                 <div id={"hello"}><h1>Hi there,</h1></div>
                 <div id={"introduction-1"}><h2>My name is <span className={"text-highlight"}>Marcin Sobczyk</span></h2>

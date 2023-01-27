@@ -1,16 +1,20 @@
 import authorPhoto from "../images/author-photo.jpg"
 import TechStack from "../Components/TechStack"
+import Navbar from "../Components/Navbar"
 
 function About() {
     return (
         <div>
+            <header id="header">
+                < Navbar active={"nav-about"}/>
+            </header>
             <div className={"bio-wrapper"}>
                 <div className={"message-container"}>
                     <h1>{"< "}Hello World{" />"}</h1>
                     <p>
                         Hi! I'm Marcin. Just some random guy that loves technology, solving problems and creating stuff.
                         One day I combined these three factors together and found myself on the programmer path.
-                        {"\n"}Currently, I concentrate my efforts on learning the best practices of Web Development, and
+                        {"\n"}Currently, I concentrate my efforts on learning the best practices of Web Development and
                         I spend
                         my spare time working on personal projects in this field.
                     </p>
@@ -23,7 +27,7 @@ function About() {
                     <p>My Tech Stack:</p>
                     <TechStack/>
                 </div>
-                <img className={"image"} src={authorPhoto} height={"500px"} alt="Photo of website author"/>
+                <img className={"image"} src={authorPhoto} height={"500px"} alt="Website author"/>
             </div>
         </div>
     )

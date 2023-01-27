@@ -112,13 +112,28 @@ a > i:hover, li > i:hover {
 }
 
 #header {
-    margin: 32px 0 160px 0;
+    margin: 64px 0px 160px 0;
 }
 
 .navbar {
     font-size: 2rem;
     font-weight: bold;
     padding: 0 18px;
+}
+
+.nav-link {
+    padding: 5px 15px;
+    border: 3px solid transparent;
+    border-radius: 16px;
+}
+
+.nav-link:hover {
+    border-color: var(--green-2);
+}
+
+.active {
+    color: var(--black-1);
+    background-color: var(--green-2) ;
 }
 
 .tech-stack {
@@ -135,7 +150,14 @@ a > i:hover, li > i:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.social-links > ul, .tech-stack > ul {
     gap: 3rem;
+}
+
+.navbar > ul {
+    gap: 1.3rem;
 }
 
 .tech-stack > ul > li > i:hover .tech-name {
@@ -167,7 +189,7 @@ a > i:hover, li > i:hover {
 
 .social-links > ul {
     gap: 4rem;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .home-footer {
@@ -198,9 +220,11 @@ a > i:hover, li > i:hover {
 }
 
 .projects-wrapper > h1 {
-    font-size: 48px;
-    margin-left: 14%;
+    font-size: 3rem;
     margin-bottom: 48px;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .projects-container {
@@ -328,14 +352,6 @@ a > i:hover, li > i:hover {
         margin: 2rem auto;
         height: 500px;
         width: auto;
-    }
-}
-
-@media (width < 1050px) {
-    .projects-wrapper > h1 {
-        text-align: center;
-        margin-left: 2%;
-        margin-right: 2%;
     }
 }
 

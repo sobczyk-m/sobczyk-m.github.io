@@ -1,15 +1,18 @@
 import projects from "../projectsCollection"
+import Navbar from "../Components/Navbar"
+import React from "react"
+import authorPhoto from "../images/author-photo.jpg"
 
 function Projects() {
 
     const creatProjectsList = () => {
         return projects.map(project => (
-                <li className={"project"}>
+                <li key={project.name} className={"project"}>
                     <h1 className={"project-header"}>{project.name}</h1>
                     <p className={"project-description"}>{project.description}</p>
                     <div className={"project-tech-stacks-container"}>
                         {project.techStack.map(techStack => (
-                            <p className={"project-tech-stack"}>{techStack}</p>))}
+                            <p key={techStack} className={"project-tech-stack"}>{techStack}</p>))}
                     </div>
                     <div className={"project-bottom-bar"}>
                         <a href={project.codeLink} rel="noreferrer" target={"_blank"}><i
@@ -24,11 +27,16 @@ function Projects() {
     }
 
     return (
-        <div className={"projects-wrapper"}>
-            <h1>{"< "}Some Things I’ve Built{" />"}</h1>
-            <ul className={"projects-container"}>
-                {creatProjectsList()}
-            </ul>
+        <div>
+            <header id="header">
+                < Navbar active={"nav-projects"}/>
+            </header>
+            <div className={"projects-wrapper"}>
+                 <h1>{"< "}Some Things I’ve Built{" />"}</h1>
+                <ul className={"projects-container"}>
+                    {creatProjectsList()}
+                </ul>
+            </div>
         </div>
     )
 }
