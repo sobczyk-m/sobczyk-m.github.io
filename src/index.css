@@ -95,15 +95,30 @@ a > i:hover, li > i:hover {
 
 #hello > h1 {
     font-size: 1.5rem;
+    visibility: hidden;
+    animation-name: load;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    animation-iteration-count: 1;
 }
 
 #introduction-1 > h2 {
     font-size: 48px;
+    visibility: hidden;
+    animation-name: load;
+    animation-duration: 3s;
+    animation-delay: 2.5s;
+    animation-iteration-count: 1;
 }
 
 #introduction-2 > h3 {
     color: var(--gray-2);
     font-size: 1.8rem;
+    visibility: hidden;
+    animation-name: load;
+    animation-duration: 3s;
+    animation-delay: 3.5s;
+    animation-iteration-count: 1;
 }
 
 .text-highlight {
@@ -204,6 +219,12 @@ a > i:hover, li > i:hover {
 #secret-programmer {
     color: var(--green-3);
     font-size: 23rem;
+    visibility: hidden;
+    animation-name: load;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
 }
 
 .image {
@@ -317,6 +338,17 @@ a > i:hover, li > i:hover {
 
 .project:hover .project-image {
     opacity: 0.08;
+}
+
+@keyframes load {
+    from {
+        visibility: hidden;
+        opacity: 0;
+    }
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
 @media (width < 1350px) {

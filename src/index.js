@@ -8,12 +8,16 @@ import About from "./Pages/About"
 import Projects from "./Pages/Projects"
 import Contact from "./Pages/Contact"
 
+const makeElementVisible = (event) => {
+    event.target.style.visibility = "visible"
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
     <React.StrictMode>
         <HashRouter>
             <Routes>
-                <Route path={"/"} element={<Home/>}></Route>
+                <Route path={"/"} element={<Home onAnimationEnd={makeElementVisible}/>}></Route>
                 <Route path={"/about"} element={<About/>}></Route>
                 <Route path={"/projects"} element={<Projects/>}></Route>
                 <Route path={"/contact"} element={<Contact/>}></Route>
