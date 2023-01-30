@@ -46,9 +46,9 @@ a > i:hover, li > i:hover {
 
 .bio-wrapper {
     display: flex;
-    justify-content: space-evenly;
     padding: 0 10%;
     margin-bottom: 10%;
+    justify-content: center;
 }
 
 .message-container {
@@ -85,6 +85,12 @@ a > i:hover, li > i:hover {
     font-size: 1.5rem;
     margin-bottom: 32px;
     white-space: pre-line;
+}
+
+#home-container {
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #hello, #introduction-1, #introduction-2 {
@@ -232,6 +238,9 @@ a > i:hover, li > i:hover {
     gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1800px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .project {
@@ -396,6 +405,14 @@ a > i:hover, li > i:hover {
 /**
  * || Media Queries
  */
+@media (width > 1710px) {
+    .home-footer {
+        max-width: 1380px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 @media (width < 1350px) {
     .image {
         height: 400px;
