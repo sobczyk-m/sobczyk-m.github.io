@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import reportWebVitals from './reportWebVitals'
-import {BrowserRouter, Route, Routes} from "react-router-dom"
+import {HashRouter, Route, Routes} from "react-router-dom"
 import Home from "./Pages/Home"
 import About from "./Pages/About"
 import Projects from "./Pages/Projects"
@@ -11,14 +11,14 @@ import Contact from "./Pages/Contact"
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
     <React.StrictMode>
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route path={"/"} element={<Home/>}></Route>
                 <Route path={"/about"} element={<About/>}></Route>
                 <Route path={"/projects"} element={<Projects/>}></Route>
                 <Route path={"/contact"} element={<Contact/>}></Route>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     </React.StrictMode>
 )
 
