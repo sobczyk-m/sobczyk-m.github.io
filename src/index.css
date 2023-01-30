@@ -112,7 +112,7 @@ a > i:hover, li > i:hover {
 }
 
 #header {
-    margin: 64px 0px 160px 0;
+    margin: 64px 0 160px 0;
 }
 
 .navbar {
@@ -133,7 +133,7 @@ a > i:hover, li > i:hover {
 
 .active {
     color: var(--black-1);
-    background-color: var(--green-2) ;
+    background-color: var(--green-2);
 }
 
 .tech-stack {
@@ -304,7 +304,7 @@ a > i:hover, li > i:hover {
     color: var(--green-3);
     background-color: var(--black-1);
     padding: 12px;
-    border-radius: 15px;
+    border-radius: 14px;
 }
 
 .project:hover .project-description, .project:hover .project-header {
@@ -411,6 +411,27 @@ a > i:hover, li > i:hover {
         width: 100%;
         height: 300px;
     }
+
+    .project-header {
+        font-size: 1.2rem;
+    }
+
+    .project-description, .project-tech-stack, .project-icon {
+        font-size: 1rem;
+    }
+
+    .project-tech-stack {
+        padding: 2px 6px;
+    }
+
+    .project-bottom-bar {
+        padding: 0 25px 10px 0;
+    }
+
+    .project-icon, .project-icon:hover {
+        padding: 6px;
+        border-radius: 7px;
+    }
 }
 
 @media (width < 390px) {
@@ -433,5 +454,73 @@ a > i:hover, li > i:hover {
 
     .message-container > p, .contact-wrapper > p {
         font-size: 1.2rem;
+    }
+
+    .project-header {
+        font-size: 0.9rem;
+    }
+
+    .project-description, .project-tech-stack, .project-icon {
+        font-size: 0.7rem;
+    }
+}
+
+@media (width < 210px) {
+    #header {
+        margin: 32px 0 80px 0;
+    }
+
+    .projects-wrapper > h1 {
+        margin-bottom: 24px
+    }
+
+    .nav-link, .projects-wrapper > h1 {
+        font-size: 1rem;
+    }
+
+    .project-header, .project-description, .project-tech-stacks-container {
+        padding: 10px 20px 0 20px
+    }
+
+    .project-bottom-bar {
+        gap: 10px;
+    }
+}
+
+@media (width < 170px) {
+    .project-header {
+        font-size: 0.8rem;
+    }
+
+    .project-description, .project-tech-stack, .project-icon {
+        font-size: 0.6rem;
+    }
+
+    .project-bottom-bar {
+        gap: 5px;
+    }
+}
+
+@media (width < 140px) {
+    .nav-link {
+        padding: 3px 5px;
+    }
+
+    .nav-link, .projects-wrapper > h1 {
+        font-size: 0.8rem;
+    }
+
+    .project-header {
+        font-size: 0.7rem;
+    }
+
+    .project-description, .project-tech-stack, .project-icon {
+        font-size: 0.5rem;
+    }
+
+    .project-bottom-bar {
+        margin: 0 0 5px 0;
+        padding: 0;
+        justify-content: center;
     }
 }
