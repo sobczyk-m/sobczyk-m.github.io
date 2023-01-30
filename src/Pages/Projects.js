@@ -1,9 +1,11 @@
 import projects from "../projectsCollection"
 import Navbar from "../Components/Navbar"
 import React from "react"
-import authorPhoto from "../images/author-photo.jpg"
 
 function Projects() {
+    const makeElementVisible = (event) => {
+        event.target.style.opacity = "1"
+    }
 
     const creatProjectsList = () => {
         return projects.map(project => (
@@ -32,8 +34,8 @@ function Projects() {
                 < Navbar active={"nav-projects"}/>
             </header>
             <div className={"projects-wrapper"}>
-                 <h1>{"< "}Some Things I’ve Built{" />"}</h1>
-                <ul className={"projects-container"}>
+                <h1 onAnimationEnd={event => makeElementVisible(event)}>{"< "}Some Things I’ve Built{" />"}</h1>
+                <ul className={"projects-container"} onAnimationEnd={event => makeElementVisible(event)}>
                     {creatProjectsList()}
                 </ul>
             </div>

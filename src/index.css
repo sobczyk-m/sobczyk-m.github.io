@@ -401,6 +401,42 @@ a > i:hover, li > i:hover {
     }
 }
 
+.projects-container {
+    animation: 0.05s alternate 1s small-signal-interference;
+}
+
+.projects-wrapper > h1 {
+    animation: 0.05s alternate 1s large-signal-interference;
+}
+
+.projects-container, .projects-wrapper > h1 {
+    opacity: 0;
+    animation-iteration-count: 7;
+}
+
+@keyframes large-signal-interference {
+    from {
+        opacity: 0.05;
+        transform: skewX(80deg);
+    }
+    to {
+        opacity: 0.9;
+        transform: skewX(-80deg);
+    }
+}
+
+
+@keyframes small-signal-interference {
+    from {
+        opacity: 0.01;
+        transform: skewX(10deg);
+    }
+    to {
+        opacity: 0.1;
+        transform: skewX(-10deg);
+    }
+}
+
 
 /**
  * || Media Queries
