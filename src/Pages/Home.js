@@ -7,18 +7,18 @@ function Home(props) {
                 < Navbar active={"nav-home"}/>
             </header>
             <div id={"home-container"}>
-                <div id={"hello"}>
-                    <h1 onAnimationEnd={event => props.onAnimationEnd(event)}>
+                <div id={"hello"} onAnimationEnd={event => props.onAnimationEnd(event)}>
+                    <h1>
                         Hi there,
                     </h1>
                 </div>
-                <div id={"introduction-1"}>
-                    <h2 onAnimationEnd={event => props.onAnimationEnd(event)}>
+                <div id={"introduction-1"} onAnimationEnd={event => props.onAnimationEnd(event)}>
+                    <h2>
                         My name is <span className={"text-highlight"}>Marcin Sobczyk</span>
                     </h2>
                 </div>
-                <div id={"introduction-2"}>
-                    <h3 onAnimationEnd={event => props.onAnimationEnd(event)}>
+                <div id={"introduction-2"} onAnimationEnd={event => props.onAnimationEnd(event)}>
+                    <h3>
                         I am self taught Front-End Developer
                     </h3>
                 </div>

@@ -95,30 +95,15 @@ a > i:hover, li > i:hover {
 
 #hello > h1 {
     font-size: 1.5rem;
-    visibility: hidden;
-    animation-name: load;
-    animation-duration: 3s;
-    animation-delay: 1.5s;
-    animation-iteration-count: 1;
 }
 
 #introduction-1 > h2 {
     font-size: 48px;
-    visibility: hidden;
-    animation-name: load;
-    animation-duration: 3s;
-    animation-delay: 2.5s;
-    animation-iteration-count: 1;
 }
 
 #introduction-2 > h3 {
     color: var(--gray-2);
     font-size: 1.8rem;
-    visibility: hidden;
-    animation-name: load;
-    animation-duration: 3s;
-    animation-delay: 3.5s;
-    animation-iteration-count: 1;
 }
 
 .text-highlight {
@@ -219,12 +204,6 @@ a > i:hover, li > i:hover {
 #secret-programmer {
     color: var(--green-3);
     font-size: 23rem;
-    visibility: hidden;
-    animation-name: load;
-    animation-duration: 4s;
-    animation-direction: alternate;
-    animation-delay: 0.5s;
-    animation-iteration-count: 1;
 }
 
 .image {
@@ -340,6 +319,52 @@ a > i:hover, li > i:hover {
     opacity: 0.08;
 }
 
+/**
+ * || Animations
+ */
+.message-container > h1, #paragraph-1, #paragraph-2, #paragraph-3, #paragraph-4, .tech-stack, .image, #hello, #introduction-1, #introduction-2, #secret-programmer {
+    visibility: hidden;
+    animation-name: load;
+    animation-iteration-count: 1;
+}
+
+.message-container > h1, #paragraph-1, #paragraph-2, #paragraph-3, #paragraph-4, .tech-stack, .image, #hello, #introduction-1, #introduction-2 {
+    animation-duration: 2s;
+}
+
+#secret-programmer {
+    animation-duration: 4s;
+    animation-direction: alternate;
+}
+
+.message-container > h1, #secret-programmer {
+    animation-delay: 0.5s;
+}
+
+#paragraph-1, #hello {
+    animation-delay: 1.5s;
+}
+
+#paragraph-2 {
+    animation-delay: 2s;
+}
+
+#paragraph-3, #introduction-1 {
+    animation-delay: 2.5s;
+}
+
+#paragraph-4 {
+    animation-delay: 3s;
+}
+
+.tech-stack, #introduction-2 {
+    animation-delay: 3.5s;
+}
+
+.image {
+    animation-delay: 4s;
+}
+
 @keyframes load {
     from {
         visibility: hidden;
@@ -351,6 +376,9 @@ a > i:hover, li > i:hover {
     }
 }
 
+/**
+ * || Media Queries
+ */
 @media (width < 1350px) {
     .image {
         height: 400px;

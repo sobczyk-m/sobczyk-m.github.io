@@ -1,7 +1,7 @@
-function TechStack() {
+function TechStack(props) {
 
     return (
-        <div className={"tech-stack"}>
+        <div className={"tech-stack"} onAnimationEnd={event => props.onAnimationEnd(event)}>
             <ul>
                 <li><i className="fa-brands fa-react">
                     <div className={"tech-name-container"}><p className={"tech-name"}>React</p></div>
