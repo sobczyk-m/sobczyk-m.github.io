@@ -376,6 +376,23 @@ a > i:hover, li > i:hover {
     }
 }
 
+.contact-wrapper {
+    animation: 3s alternate 0s quick-zoom;
+}
+
+@keyframes quick-zoom {
+    from {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+
 /**
  * || Media Queries
  */
