@@ -5,7 +5,6 @@ function Navbar(props) {
 
     useEffect(() => {
         document.getElementById(props.active).classList.add("active")
-        console.log("did run")
     }, [])
 
     return (
