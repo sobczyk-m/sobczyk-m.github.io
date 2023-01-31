@@ -12,7 +12,7 @@ function SocialLinks() {
                     <i className="fa-brands fa-linkedin"></i>
                 </a></li>
                 <li><a href={"mailto:marcin.sobczyk.dev@gmail.com"} rel={"noreferrer"} aria-label={"E-mail"}
-                       target={"_self"}>
+                       target={"_blank"}>
                     <i className="fa-solid fa-envelope-open-text"></i>
                 </a></li>
             </ul>
