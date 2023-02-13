@@ -1,8 +1,17 @@
 import quoteMachine from "./images/Quote-Machine.png"
 import markdownPreviewer from "./images/Markdown-Previewer.png"
 import drumMachine from "./images/Drum-Machine.png"
+import calculator from "./images/Calculator.png"
 
 const projects = [
+    {
+        name: "Calculator",
+        description: "Make your life much easier with this simple calculator",
+        techStack: ["React", "JavaScript", "SASS", "HTML", "CSS"],
+        imageLink: calculator,
+        codeLink: "https://codesandbox.io/s/8mp1o0",
+        playgroundLink: "https://8mp1o0.csb.app"
+    },
     {
         name: "Quote Machine",
         description: "Get your life inspired by some random quotes.",
