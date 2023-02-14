@@ -7,6 +7,10 @@ function Projects() {
         event.target.style.opacity = "1"
     }
 
+    const middleIconStyle = {
+        marginLeft: "auto"
+    }
+
     const creatProjectsList = () => {
         return projects.map(project => (
                 <li key={project.name} className={"project"}>
@@ -17,7 +21,9 @@ function Projects() {
                             <p key={techStack} className={"project-tech-stack"}>{techStack}</p>))}
                     </div>
                     <div className={"project-bottom-bar"}>
-                        <a href={project.codeLink} rel="noreferrer" target={"_blank"}><i
+                        <a href={project.githubLink} rel="noreferrer" target={"_blank"}><i
+                            className="fa-brands fa-github project-icon"></i></a>
+                        <a href={project.codeLink} rel="noreferrer" target={"_blank"} style={middleIconStyle}><i
                             className="fa-solid fa-code project-icon"></i></a>
                         <a href={project.playgroundLink} rel="noreferrer" target={"_blank"}><i
                             className="fa-solid fa-up-right-from-square project-icon"></i></a>
