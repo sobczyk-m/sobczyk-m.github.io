@@ -7,7 +7,7 @@ const projects = [
     {
         name: "Calculator",
         description: "Make your life much easier with this simple calculator",
-        techStack: ["React", "JavaScript", "SASS", "HTML", "CSS"],
+        techStack: ["React", "JavaScript", "Jest", "SASS", "HTML", "CSS"],
         imageLink: calculator,
         githubLink: "https://github.com/sobczyk-m/Calculator",
         codeLink: "https://codesandbox.io/s/8mp1o0",
