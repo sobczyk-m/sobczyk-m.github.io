@@ -1,4 +1,4 @@
-import projects from "../projectsCollection"
+import projects from "../data/projectsCollection"
 import Navbar from "../Components/Navbar"
 import React from "react"
 
