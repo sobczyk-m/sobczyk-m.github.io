@@ -1,5 +1,6 @@
-@use "components/index";
+@use "components/index" as components;
 @use "abstracts/mixins";
+@use "pages/index" as pages;
 
 *, ::before, ::after {
   box-sizing: border-box;
@@ -90,31 +91,6 @@ a > i:hover, li > i:hover {
   white-space: pre-line;
 }
 
-#home-container {
-  max-width: 1500px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-#hello, #introduction-1, #introduction-2 {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 32px;
-}
-
-#hello > h1 {
-  font-size: 1.5rem;
-}
-
-#introduction-1 > h2 {
-  font-size: 48px;
-}
-
-#introduction-2 > h3 {
-  color: var(--gray-2);
-  font-size: 1.8rem;
-}
-
 .text-highlight {
   color: var(--green-4);
   font-weight: bold;
@@ -127,20 +103,6 @@ a > i:hover, li > i:hover {
 .active {
   color: var(--black-1);
   background-color: var(--green-2);
-}
-
-.home-footer {
-  margin-left: 10%;
-  margin-right: 10%;
-  width: auto;
-  display: flex;
-  justify-content: right;
-  margin-bottom: 10%;
-}
-
-#secret-programmer {
-  color: var(--green-3);
-  font-size: 23rem;
 }
 
 .image {

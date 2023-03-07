@@ -1,0 +1,44 @@
+#home-container {
+  max-width: 1500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#hello > h1 {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+#introduction-1 > h2 {
+  h2 {
+    font-size: 48px;
+  }
+}
+
+#introduction-2 {
+  h3 {
+    color: var(--gray-2);
+    font-size: 1.8rem;
+  }
+}
+
+#hello, #introduction-1, #introduction-2 {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 32px;
+}
+
+.home-footer {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: auto;
+  display: flex;
+  justify-content: right;
+  margin-bottom: 10%;
+}
+
+#secret-programmer {
+  color: var(--green-3);
+  font-size: 23rem;
+}
