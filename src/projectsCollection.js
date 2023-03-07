@@ -1,7 +1,7 @@
-import quoteMachine from "./images/Quote-Machine.png"
-import markdownPreviewer from "./images/Markdown-Previewer.png"
-import drumMachine from "./images/Drum-Machine.png"
-import calculator from "./images/Calculator.png"
+import quoteMachine from "./assets/images/Quote-Machine.png"
+import markdownPreviewer from "./assets/images/Markdown-Previewer.png"
+import drumMachine from "./assets/images/Drum-Machine.png"
+import calculator from "./assets/images/Calculator.png"
 
 const projects = [
     {

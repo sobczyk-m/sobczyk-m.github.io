@@ -1,4 +1,4 @@
-import authorPhoto from "../images/author-photo.jpg"
+import authorPhoto from "../assets/images/author-photo.jpg"
 import TechStack from "../Components/TechStack"
 import Navbar from "../Components/Navbar"
 
