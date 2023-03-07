@@ -1,5 +1,6 @@
 @use "components/index";
 @use "abstracts/mixins";
+@use "components/socialLinks";
 
 *, ::before, ::after {
   box-sizing: border-box;
@@ -133,16 +134,16 @@ a > i:hover, li > i:hover {
   width: 100%;
 }
 
-.social-links, .tech-stack {
+.tech-stack {
   display: inline-block;
   padding: 16px 0;
 }
 
-.social-links > ul, .tech-stack > ul {
+.tech-stack > ul {
   @include mixins.ul-global
 }
 
-.social-links > ul, .tech-stack > ul {
+.tech-stack > ul {
   gap: 3rem;
 }
 
@@ -171,11 +172,6 @@ a > i:hover, li > i:hover {
 .tech-stack > ul {
   font-size: 5rem;
   justify-content: space-evenly;
-}
-
-.social-links > ul {
-  gap: 4rem;
-  font-size: 4rem;
 }
 
 .home-footer {

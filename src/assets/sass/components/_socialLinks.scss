@@ -1,0 +1,13 @@
+@use "../abstracts/mixins";
+
+.social-links {
+  display: inline-block;
+  padding: 16px 0;
+
+  ul {
+    @include mixins.ul-global;
+    gap: 4rem;
+    font-size: 4rem;
+  }
+
+}
