@@ -1,0 +1,22 @@
+@use "../abstracts/mixins";
+
+.navbar {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0 18px;
+
+  ul {
+    @include mixins.ul-global;
+    gap: 1.3rem;
+  }
+}
+
+.nav-link {
+  padding: 5px 15px;
+  border: 3px solid transparent;
+  border-radius: 16px;
+}
+
+.nav-link:hover {
+  border-color: var(--green-2);
+}

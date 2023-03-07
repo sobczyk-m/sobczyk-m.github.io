@@ -1,3 +1,6 @@
+@use "components/index";
+@use "abstracts/mixins";
+
 *, ::before, ::after {
   box-sizing: border-box;
   padding: 0;
@@ -121,22 +124,6 @@ a > i:hover, li > i:hover {
   margin: 64px 0 160px 0;
 }
 
-.navbar {
-  font-size: 2rem;
-  font-weight: bold;
-  padding: 0 18px;
-}
-
-.nav-link {
-  padding: 5px 15px;
-  border: 3px solid transparent;
-  border-radius: 16px;
-}
-
-.nav-link:hover {
-  border-color: var(--green-2);
-}
-
 .active {
   color: var(--black-1);
   background-color: var(--green-2);
@@ -151,19 +138,12 @@ a > i:hover, li > i:hover {
   padding: 16px 0;
 }
 
-.navbar > ul, .social-links > ul, .tech-stack > ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.social-links > ul, .tech-stack > ul {
+  @include mixins.ul-global
 }
 
 .social-links > ul, .tech-stack > ul {
   gap: 3rem;
-}
-
-.navbar > ul {
-  gap: 1.3rem;
 }
 
 .tech-stack > ul > li > i:hover .tech-name {
