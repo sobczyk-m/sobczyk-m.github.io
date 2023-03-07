@@ -1,0 +1,55 @@
+@keyframes small-signal-interference {
+  from {
+    opacity: 0.01;
+    transform: skewX(10deg);
+  }
+  to {
+    opacity: 0.1;
+    transform: skewX(-10deg);
+  }
+}
+
+@keyframes large-signal-interference {
+  from {
+    opacity: 0.05;
+    transform: skewX(80deg);
+  }
+  to {
+    opacity: 0.9;
+    transform: skewX(-80deg);
+  }
+}
+
+@keyframes quick-zoom {
+  from {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes crop-out {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes crop-out-80 {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 0.8;
+  }
+}

@@ -4,3 +4,7 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
+@mixin animate($name, $duration, $easing-func, $delay, $times, $direction) {
+  animation: $name $duration $easing-func $delay $times $direction;
+}

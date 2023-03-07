@@ -38,6 +38,8 @@
   width: 100%;
   display: inline-block;
   padding: 16px 0;
+  visibility: hidden;
+  animation: crop-out 2s ease 3.5s 1 normal;
 }
 .tech-stack ul {
   list-style: none;
@@ -71,12 +73,67 @@
   display: block;
 }
 
+@keyframes small-signal-interference {
+  from {
+    opacity: 0.01;
+    transform: skewX(10deg);
+  }
+  to {
+    opacity: 0.1;
+    transform: skewX(-10deg);
+  }
+}
+@keyframes large-signal-interference {
+  from {
+    opacity: 0.05;
+    transform: skewX(80deg);
+  }
+  to {
+    opacity: 0.9;
+    transform: skewX(-80deg);
+  }
+}
+@keyframes quick-zoom {
+  from {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes crop-out {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@keyframes crop-out-80 {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 0.8;
+  }
+}
 #home-container {
   max-width: 1500px;
   margin-right: auto;
   margin-left: auto;
 }
 
+#hello {
+  visibility: hidden;
+  animation: crop-out 2s ease 1.5s 1 normal;
+}
 #hello > h1 {
   font-size: 1.5rem;
 }
@@ -85,6 +142,10 @@
   font-size: 48px;
 }
 
+#introduction-2 {
+  visibility: hidden;
+  animation: crop-out 2s ease 3.5s 1 normal;
+}
 #introduction-2 > h3 {
   color: #a6a095;
   font-size: 1.8rem;
@@ -106,6 +167,8 @@
 }
 
 #secret-programmer {
+  animation: crop-out 4s linear 0.5s 1 alternate;
+  visibility: hidden;
   color: #53dfbd;
   font-size: 23rem;
 }
@@ -123,6 +186,8 @@
 .message-container h1 {
   font-size: 3rem;
   margin-bottom: 48px;
+  visibility: hidden;
+  animation: crop-out 2s ease 0.5s 1 normal;
 }
 .message-container h2 {
   font-size: 2rem;
@@ -136,6 +201,31 @@
   white-space: pre-line;
 }
 
+#introduction-1 {
+  visibility: hidden;
+  animation: crop-out 2s ease 2.5s 1 normal;
+}
+
+#paragraph-1 {
+  visibility: hidden;
+  animation: crop-out 2s ease 1.5s 1 normal;
+}
+
+#paragraph-2 {
+  visibility: hidden;
+  animation: crop-out 2s ease 2s 1 normal;
+}
+
+#paragraph-3 {
+  visibility: hidden;
+  animation: crop-out 2s ease 2.5s 1 normal;
+}
+
+#paragraph-4 {
+  visibility: hidden;
+  animation: crop-out 2s ease 3s 1 normal;
+}
+
 .image {
   height: 440px;
   margin-top: 99px;
@@ -143,6 +233,8 @@
   border: 1px solid #d1d3d7;
   border-radius: 16px;
   opacity: 0.8;
+  visibility: hidden;
+  animation: crop-out-80 2s ease-in-out 4s 1 normal;
 }
 
 .contact-wrapper {
@@ -150,6 +242,7 @@
   flex-direction: column;
   align-items: center;
   padding: 0 10%;
+  animation: quick-zoom 3s ease 1 0s normal;
 }
 .contact-wrapper h1 {
   text-align: center;
@@ -176,6 +269,8 @@
   text-align: center;
   margin-left: 2%;
   margin-right: 2%;
+  opacity: 0;
+  animation: large-signal-interference 0.05s ease 1s 7 alternate;
 }
 
 .projects-container {
@@ -186,6 +281,8 @@
   max-width: 1800px;
   margin-right: auto;
   margin-left: auto;
+  opacity: 0;
+  animation: small-signal-interference 0.05s linear 1s 7 alternate;
 }
 
 .project {
@@ -316,110 +413,6 @@ a > i:hover, li > i:hover {
   background-color: #5bf2ce;
 }
 
-/**
- * || Animations
- */
-.message-container > h1, #paragraph-1, #paragraph-2, #paragraph-3, #paragraph-4, .tech-stack, .image, #hello, #introduction-1, #introduction-2, #secret-programmer {
-  visibility: hidden;
-  animation-name: load;
-  animation-iteration-count: 1;
-}
-
-.message-container > h1, #paragraph-1, #paragraph-2, #paragraph-3, #paragraph-4, .tech-stack, .image, #hello, #introduction-1, #introduction-2 {
-  animation-duration: 2s;
-}
-
-#secret-programmer {
-  animation-duration: 4s;
-  animation-direction: alternate;
-}
-
-.message-container > h1, #secret-programmer {
-  animation-delay: 0.5s;
-}
-
-#paragraph-1, #hello {
-  animation-delay: 1.5s;
-}
-
-#paragraph-2 {
-  animation-delay: 2s;
-}
-
-#paragraph-3, #introduction-1 {
-  animation-delay: 2.5s;
-}
-
-#paragraph-4 {
-  animation-delay: 3s;
-}
-
-.tech-stack, #introduction-2 {
-  animation-delay: 3.5s;
-}
-
-.image {
-  animation-delay: 4s;
-}
-
-@keyframes load {
-  from {
-    visibility: hidden;
-    opacity: 0;
-  }
-  to {
-    visibility: visible;
-    opacity: 1;
-  }
-}
-.contact-wrapper {
-  animation: 3s alternate 0s quick-zoom;
-}
-
-@keyframes quick-zoom {
-  from {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-.projects-container {
-  animation: 0.05s alternate 1s small-signal-interference;
-}
-
-.projects-wrapper > h1 {
-  animation: 0.05s alternate 1s large-signal-interference;
-}
-
-.projects-container, .projects-wrapper > h1 {
-  opacity: 0;
-  animation-iteration-count: 7;
-}
-
-@keyframes large-signal-interference {
-  from {
-    opacity: 0.05;
-    transform: skewX(80deg);
-  }
-  to {
-    opacity: 0.9;
-    transform: skewX(-80deg);
-  }
-}
-@keyframes small-signal-interference {
-  from {
-    opacity: 0.01;
-    transform: skewX(10deg);
-  }
-  to {
-    opacity: 0.1;
-    transform: skewX(-10deg);
-  }
-}
 /**
  * || Media Queries
  */

@@ -1,4 +1,6 @@
 @use "../abstracts/colors";
+@use "../abstracts/mixins";
+@use "../abstracts/animations";
 
 #home-container {
   max-width: 1500px;
@@ -7,6 +9,9 @@
 }
 
 #hello {
+  visibility: hidden;
+  @include mixins.animate(crop-out, 2s, ease, 1.5s, 1, normal);
+
   > h1 {
     font-size: 1.5rem;
   }
@@ -19,6 +24,9 @@
 }
 
 #introduction-2 {
+  visibility: hidden;
+  @include mixins.animate(crop-out, 2s, ease, 3.5s, 1, normal);
+
   > h3 {
     color: colors.$gray-2;
     font-size: 1.8rem;
@@ -41,6 +49,8 @@
 }
 
 #secret-programmer {
+  @include mixins.animate(crop-out, 4s, linear, 0.5s, 1, alternate);
+  visibility: hidden;
   color: colors.$green-3;
   font-size: 23rem;
 }

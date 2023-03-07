@@ -1,4 +1,5 @@
 @use "../abstracts/colors";
+@use "../abstracts/mixins";
 
 .projects-wrapper {
   margin-bottom: 10%;
@@ -9,6 +10,8 @@
     text-align: center;
     margin-left: 2%;
     margin-right: 2%;
+    opacity: 0;
+    @include mixins.animate(large-signal-interference, 0.05s, ease, 1s, 7, alternate);
   }
 }
 
@@ -20,6 +23,8 @@
   max-width: 1800px;
   margin-right: auto;
   margin-left: auto;
+  opacity: 0;
+  @include mixins.animate(small-signal-interference, 0.05s, linear, 1s, 7, alternate);
 }
 
 .project {
