@@ -1,6 +1,6 @@
-import authorPhoto from "../assets/images/author-photo.jpg"
-import TechStack from "../Components/TechStack"
-import Navbar from "../Components/Navbar"
+import authorPhoto from "../assets/images/Author-photo.jpg"
+import TechStack from "../components/TechStack"
+import Navbar from "../components/Navbar"
 
 function About(props) {
     return (
