@@ -1,5 +1,6 @@
 @use "components/index" as components;
 @use "abstracts/mixins";
+@use "abstracts/colors";
 @use "pages/index" as pages;
 
 *, ::before, ::after {
@@ -8,24 +9,10 @@
   margin: 0;
 }
 
-:root {
-  --black-1: #222325;
-  --green-1: #008e6b;
-  --green-2: #5bf2ce;
-  --green-3: #53dfbd;
-  --green-4: #64ffda;
-  --silver-1: #a7c3e5;
-  --silver-2: #8392a5;
-  --gray-1: #d1d3d7;
-  --gray-2: #a6a095;
-  --gray-3: #464646;
-  --orange: #fbb02d;
-}
-
 html {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
-  background-color: var(--black-1);
-  color: var(--gray-1);
+  background-color: colors.$black-1;
+  color: colors.$gray-1;
 }
 
 a {
@@ -38,11 +25,11 @@ i {
 }
 
 a > i:hover, li > i:hover {
-  color: var(--green-4);
+  color: colors.$green-4;
 }
 
 .text-highlight {
-  color: var(--green-4);
+  color: colors.$green-4;
   font-weight: bold;
 }
 
@@ -51,8 +38,8 @@ a > i:hover, li > i:hover {
 }
 
 .active {
-  color: var(--black-1);
-  background-color: var(--green-2);
+  color: colors.$black-1;
+  background-color: colors.$green-2;
 }
 
 /**

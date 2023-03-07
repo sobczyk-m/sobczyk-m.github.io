@@ -1,4 +1,5 @@
 @use "../abstracts/mixins";
+@use "../abstracts/colors";
 
 .navbar {
   font-size: 2rem;
@@ -18,5 +19,5 @@
 }
 
 .nav-link:hover {
-  border-color: var(--green-2);
+  border-color: colors.$green-2;
 }

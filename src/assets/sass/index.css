@@ -18,7 +18,7 @@
 }
 
 .nav-link:hover {
-  border-color: var(--green-2);
+  border-color: #5bf2ce;
 }
 
 .social-links {
@@ -60,8 +60,8 @@
   position: absolute;
   display: none;
   font-size: 1.3rem;
-  color: var(--gray-1);
-  background-color: var(--gray-3);
+  color: #d1d3d7;
+  background-color: #464646;
   padding: 3px 15px;
   margin: 16px 0 0 0;
   border-radius: 16px;
@@ -86,7 +86,7 @@
 }
 
 #introduction-2 > h3 {
-  color: var(--gray-2);
+  color: #a6a095;
   font-size: 1.8rem;
 }
 
@@ -106,7 +106,7 @@
 }
 
 #secret-programmer {
-  color: var(--green-3);
+  color: #53dfbd;
   font-size: 23rem;
 }
 
@@ -140,7 +140,7 @@
   height: 440px;
   margin-top: 99px;
   padding: 5px;
-  border: 1px solid var(--gray-1);
+  border: 1px solid #d1d3d7;
   border-radius: 16px;
   opacity: 0.8;
 }
@@ -207,16 +207,16 @@
 .project-tech-stack {
   font-size: 1.1rem;
   font-weight: bold;
-  color: var(--gray-1);
-  background-color: var(--green-1);
+  color: #d1d3d7;
+  background-color: #008e6b;
   padding: 10px 15px;
   margin: 2px;
   border-radius: 32px;
 }
 
 .project-tech-stack:hover {
-  color: var(--black-1);
-  background-color: var(--green-3);
+  color: #222325;
+  background-color: #53dfbd;
 }
 
 .project-bottom-bar {
@@ -230,13 +230,13 @@
 
 .project-icon {
   font-size: 2rem;
-  color: var(--orange);
+  color: #fbb02d;
   padding: 12px;
 }
 
 .project-icon:hover {
-  color: var(--green-3);
-  background-color: var(--black-1);
+  color: #53dfbd;
+  background-color: #222325;
   padding: 12px;
   border-radius: 14px;
 }
@@ -283,24 +283,10 @@
   margin: 0;
 }
 
-:root {
-  --black-1: #222325;
-  --green-1: #008e6b;
-  --green-2: #5bf2ce;
-  --green-3: #53dfbd;
-  --green-4: #64ffda;
-  --silver-1: #a7c3e5;
-  --silver-2: #8392a5;
-  --gray-1: #d1d3d7;
-  --gray-2: #a6a095;
-  --gray-3: #464646;
-  --orange: #fbb02d;
-}
-
 html {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
-  background-color: var(--black-1);
-  color: var(--gray-1);
+  background-color: #222325;
+  color: #d1d3d7;
 }
 
 a {
@@ -313,11 +299,11 @@ i {
 }
 
 a > i:hover, li > i:hover {
-  color: var(--green-4);
+  color: #64ffda;
 }
 
 .text-highlight {
-  color: var(--green-4);
+  color: #64ffda;
   font-weight: bold;
 }
 
@@ -326,8 +312,8 @@ a > i:hover, li > i:hover {
 }
 
 .active {
-  color: var(--black-1);
-  background-color: var(--green-2);
+  color: #222325;
+  background-color: #5bf2ce;
 }
 
 /**

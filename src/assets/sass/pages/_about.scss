@@ -1,3 +1,5 @@
+@use "../abstracts/colors";
+
 .bio-wrapper {
   display: flex;
   padding: 0 10%;
@@ -31,7 +33,7 @@
   height: 440px;
   margin-top: 99px;
   padding: 5px;
-  border: 1px solid var(--gray-1);
+  border: 1px solid colors.$gray-1;
   border-radius: 16px;
   opacity: 0.8;
 }

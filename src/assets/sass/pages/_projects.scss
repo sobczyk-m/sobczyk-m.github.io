@@ -1,3 +1,5 @@
+@use "../abstracts/colors";
+
 .projects-wrapper {
   margin-bottom: 10%;
 
@@ -39,16 +41,16 @@
 .project-tech-stack {
   font-size: 1.1rem;
   font-weight: bold;
-  color: var(--gray-1);
-  background-color: var(--green-1);
+  color: colors.$gray-1;
+  background-color: colors.$green-1;
   padding: 10px 15px;
   margin: 2px;
   border-radius: 32px;
 }
 
 .project-tech-stack:hover {
-  color: var(--black-1);
-  background-color: var(--green-3);
+  color: colors.$black-1;
+  background-color: colors.$green-3;
 }
 
 .project-bottom-bar {
@@ -62,13 +64,13 @@
 
 .project-icon {
   font-size: 2rem;
-  color: var(--orange);
+  color: colors.$orange;
   padding: 12px;
 }
 
 .project-icon:hover {
-  color: var(--green-3);
-  background-color: var(--black-1);
+  color: colors.$green-3;
+  background-color: colors.$black-1;
   padding: 12px;
   border-radius: 14px;
 }
