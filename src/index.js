@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
+import './sass/index.css'
 import reportWebVitals from './reportWebVitals'
 import {HashRouter, Route, Routes} from "react-router-dom"
 import Home from "./Pages/Home"
