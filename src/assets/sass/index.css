@@ -77,15 +77,15 @@
   margin-left: auto;
 }
 
-#hello > h1 h1 {
+#hello > h1 {
   font-size: 1.5rem;
 }
 
-#introduction-1 > h2 h2 {
+#introduction-1 > h2 {
   font-size: 48px;
 }
 
-#introduction-2 h3 {
+#introduction-2 > h3 {
   color: var(--gray-2);
   font-size: 1.8rem;
 }
