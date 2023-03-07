@@ -110,6 +110,41 @@
   font-size: 23rem;
 }
 
+.bio-wrapper {
+  display: flex;
+  padding: 0 10%;
+  margin-bottom: 10%;
+  justify-content: center;
+}
+
+.message-container {
+  margin-right: 4rem;
+}
+.message-container h1 {
+  font-size: 3rem;
+  margin-bottom: 48px;
+}
+.message-container h2 {
+  font-size: 2rem;
+  margin-bottom: 32px;
+}
+.message-container p {
+  max-width: 800px;
+  text-align: justify;
+  font-size: 1.5rem;
+  margin-bottom: 32px;
+  white-space: pre-line;
+}
+
+.image {
+  height: 440px;
+  margin-top: 99px;
+  padding: 5px;
+  border: 1px solid var(--gray-1);
+  border-radius: 16px;
+  opacity: 0.8;
+}
+
 *, ::before, ::after {
   box-sizing: border-box;
   padding: 0;
@@ -156,27 +191,16 @@ a > i:hover, li > i:hover {
   padding: 0 10%;
 }
 
-.bio-wrapper {
-  display: flex;
-  padding: 0 10%;
-  margin-bottom: 10%;
-  justify-content: center;
-}
-
-.message-container {
-  margin-right: 4rem;
-}
-
 .contact-wrapper > h1 {
   text-align: center;
 }
 
-.contact-wrapper > h1, .message-container > h1 {
+.contact-wrapper > h1 {
   font-size: 3rem;
   margin-bottom: 48px;
 }
 
-.contact-wrapper > h2, .message-container > h2 {
+.contact-wrapper > h2 {
   font-size: 2rem;
   margin-bottom: 32px;
 }
@@ -191,14 +215,6 @@ a > i:hover, li > i:hover {
   margin-bottom: 32px;
 }
 
-.message-container > p {
-  max-width: 800px;
-  text-align: justify;
-  font-size: 1.5rem;
-  margin-bottom: 32px;
-  white-space: pre-line;
-}
-
 .text-highlight {
   color: var(--green-4);
   font-weight: bold;
@@ -211,15 +227,6 @@ a > i:hover, li > i:hover {
 .active {
   color: var(--black-1);
   background-color: var(--green-2);
-}
-
-.image {
-  height: 440px;
-  margin-top: 99px;
-  padding: 5px;
-  border: 1px solid var(--gray-1);
-  border-radius: 16px;
-  opacity: 0.8;
 }
 
 .projects-wrapper {
