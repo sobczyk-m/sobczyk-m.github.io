@@ -129,50 +129,6 @@ a > i:hover, li > i:hover {
   background-color: var(--green-2);
 }
 
-.tech-stack {
-  width: 100%;
-}
-
-.tech-stack {
-  display: inline-block;
-  padding: 16px 0;
-}
-
-.tech-stack > ul {
-  @include mixins.ul-global
-}
-
-.tech-stack > ul {
-  gap: 3rem;
-}
-
-.tech-stack > ul > li > i:hover .tech-name {
-  display: block;
-}
-
-.tech-name-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-.tech-name {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
-  position: absolute;
-  display: none;
-  font-size: 1.3rem;
-  color: var(--gray-1);
-  background-color: var(--gray-3);
-  padding: 3px 15px;
-  margin: 16px 0 0 0;
-  border-radius: 16px;
-}
-
-.tech-stack > ul {
-  font-size: 5rem;
-  justify-content: space-evenly;
-}
-
 .home-footer {
   margin-left: 10%;
   margin-right: 10%;
