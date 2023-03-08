@@ -1,0 +1,27 @@
+@use "../abstracts/colors";
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  background-color: colors.$black-1;
+  color: colors.$gray-1;
+}
+
+.text-highlight {
+  color: colors.$green-4;
+  font-weight: bold;
+}
+
+#header {
+  margin: 64px 0 160px 0;
+}
+
+.active {
+  color: colors.$black-1;
+  background-color: colors.$green-2;
+}
