@@ -1,3 +1,5 @@
+@use "breakpoints";
+
 @mixin ul-global {
   list-style: none;
   display: flex;
@@ -7,4 +9,25 @@
 
 @mixin animate($name, $duration, $easing-func, $delay, $times, $direction) {
   animation: $name $duration $easing-func $delay $times $direction;
+}
+
+@mixin breakpoint($bp, $dir) {
+  $bp-map: map-get(breakpoints.$bp-sizes, $bp);
+  $dir-map: map-get(breakpoints.$bp-directions, $dir);
+  @if ($bp-map) {
+    @if $dir == down {
+      @media (width #{$dir-map} #{$bp-map}) {
+        @content
+      }
+    } @else if $dir == up {
+      @media (width #{$dir-map} #{$bp-map}) {
+        @content
+      }
+    } @else {
+      @error "Direction #{$dir} is not defined"
+    }
+
+  } @else {
+    @error "Breakpoint #{$bp} is not defined"
+  }
 }

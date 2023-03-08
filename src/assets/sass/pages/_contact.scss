@@ -7,6 +7,15 @@
   align-items: center;
   padding: 0 10%;
   @include mixins.animate(quick-zoom, 3s, ease, 1, 0s, normal);
+  @include mixins.breakpoint(XS, down) {
+    h1, h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+  }
 
   h1 {
     text-align: center;

@@ -5,9 +5,11 @@
   padding: 16px 0;
 
   ul {
-    @include mixins.ul-global;
     gap: 4rem;
     font-size: 4rem;
+    @include mixins.ul-global;
+    @include mixins.breakpoint(M, down) {
+      font-size: 3rem;
+    }
   }
-
 }

@@ -12,6 +12,9 @@
     margin-right: 2%;
     opacity: 0;
     @include mixins.animate(large-signal-interference, 0.05s, ease, 1s, 7, alternate);
+    @include mixins.breakpoint(XS, down) {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -32,18 +35,62 @@
   width: 450px;
   height: 400px;
   list-style-type: none;
+  @include mixins.breakpoint(L, down) {
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+  @include mixins.breakpoint(XS, down) {
+    width: 100%;
+    height: 300px;
+  }
+
+  &:hover {
+    .project-header, .project-description {
+      display: block;
+      position: relative;
+    }
+
+    .project-tech-stacks-container, .project-bottom-bar {
+      display: flex;
+    }
+
+    .project-image {
+      opacity: 0.05;
+    }
+  }
+}
+
+.project-header {
+  z-index: 1;
+  display: none;
+  text-align: center;
+  padding: 20px 30px 0 30px;
+  @include mixins.breakpoint(XS, down) {
+    font-size: 1.2rem;
+  }
 }
 
 .project-description {
+  z-index: 1;
+  display: none;
   font-size: 1.3rem;
+  text-align: center;
+  padding: 20px 30px 0 30px;
+  @include mixins.breakpoint(XS, down) {
+    font-size: 1rem;
+  }
 }
 
 .project-tech-stacks-container {
+  z-index: 1;
+  display: none;
+  padding: 20px 30px 0 30px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .project-tech-stack {
+  z-index: 1;
   font-size: 1.1rem;
   font-weight: bold;
   color: colors.$gray-1;
@@ -51,33 +98,15 @@
   padding: 10px 15px;
   margin: 2px;
   border-radius: 32px;
-}
+  @include mixins.breakpoint(XS, down) {
+    font-size: 1rem;
+    padding: 2px 6px;
+  }
 
-.project-tech-stack:hover {
-  color: colors.$black-1;
-  background-color: colors.$green-3;
-}
-
-.project-bottom-bar {
-  position: absolute;
-  display: none;
-  gap: 20px;
-  width: 100%;
-  bottom: 0;
-  padding: 10px 40px 30px 40px;
-}
-
-.project-icon {
-  font-size: 2rem;
-  color: colors.$orange;
-  padding: 12px;
-}
-
-.project-icon:hover {
-  color: colors.$green-3;
-  background-color: colors.$black-1;
-  padding: 12px;
-  border-radius: 14px;
+  &:hover {
+    color: colors.$black-1;
+    background-color: colors.$green-3;
+  }
 }
 
 .project-image {
@@ -90,28 +119,39 @@
   border-radius: 32px;
 }
 
-.project-header, .project-description {
-  text-align: center;
-}
-
-.project-header, .project-description, .project-tech-stacks-container {
-  display: none;
-  padding: 20px 30px 0 30px;
-}
-
-.project:hover .project-description, .project:hover .project-header {
-  display: block;
-  position: relative;
-}
-
-.project:hover .project-tech-stacks-container, .project:hover .project-bottom-bar {
-  display: flex;
-}
-
-.project:hover .project-image {
-  opacity: 0.05;
-}
-
-.project-header, .project-description, .project-tech-stacks-container, .project-tech-stack, .project-bottom-bar, .project-icon {
+.project-bottom-bar {
   z-index: 1;
+  position: absolute;
+  display: none;
+  gap: 20px;
+  width: 100%;
+  bottom: 0;
+  padding: 10px 40px 30px 40px;
+  @include mixins.breakpoint(XS, down) {
+    padding: 0 25px 10px 25px;
+  }
+}
+
+.project-icon {
+  z-index: 1;
+  font-size: 2rem;
+  color: colors.$orange;
+  padding: 12px;
+  @include mixins.breakpoint(XS, down) {
+    font-size: 1rem;
+    padding: 6px;
+    border-radius: 7px;
+
+    &:hover {
+      padding: 6px;
+      border-radius: 7px;
+    }
+  }
+
+  &:hover {
+    color: colors.$green-3;
+    background-color: colors.$black-1;
+    padding: 12px;
+    border-radius: 14px;
+  }
 }

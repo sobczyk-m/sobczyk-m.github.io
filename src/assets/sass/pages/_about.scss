@@ -7,10 +7,33 @@
   padding: 0 10%;
   margin-bottom: 10%;
   justify-content: center;
+  @include mixins.breakpoint(XXL, down) {
+    flex-direction: column;
+  }
 }
 
 .message-container {
   margin-right: 4rem;
+  @include mixins.breakpoint(XXL, down) {
+    margin-right: 0;
+
+    > h1 {
+      text-align: center;
+    }
+
+    > p {
+      max-width: 100%;
+    }
+  }
+  @include mixins.breakpoint(XS, down) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+  }
 
   h1 {
     font-size: 3rem;
@@ -66,5 +89,14 @@
   border-radius: 16px;
   opacity: 0.8;
   visibility: hidden;
-  @include mixins.animate(crop-out-80, 2s, ease-in-out, 4s, 1, normal)
+  @include mixins.animate(crop-out-80, 2s, ease-in-out, 4s, 1, normal);
+  @include mixins.breakpoint(XXL, down) {
+    margin: 2rem auto;
+    width: auto;
+  }
+  @include mixins.breakpoint(XS, down) {
+    width: 100%;
+    height: 100%;
+    max-width: 330px;
+  }
 }

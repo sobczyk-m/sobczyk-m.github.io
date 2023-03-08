@@ -1,0 +1,14 @@
+$bp-sizes: (
+        XXS-device: 320px,
+        XS: 480px,
+        S: 600px,
+        M: 768px,
+        L: 900px,
+        XL: 1024px,
+        XXL: 1200px
+);
+
+$bp-directions: (
+        down: "<",
+        up: ">"
+);

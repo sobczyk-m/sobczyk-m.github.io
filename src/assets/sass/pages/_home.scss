@@ -11,6 +11,11 @@
 #hello {
   visibility: hidden;
   @include mixins.animate(crop-out, 2s, ease, 1.5s, 1, normal);
+  @include mixins.breakpoint(XS, down) {
+    h1 {
+      font-size: 1.1rem;
+    }
+  }
 
   > h1 {
     font-size: 1.5rem;
@@ -20,6 +25,9 @@
 #introduction-1 {
   > h2 {
     font-size: 48px;
+    @include mixins.breakpoint(XS, down) {
+      font-size: 1.7rem;
+    }
   }
 }
 
@@ -30,6 +38,9 @@
   > h3 {
     color: colors.$gray-2;
     font-size: 1.8rem;
+    @include mixins.breakpoint(XS, down) {
+      font-size: 1.3rem;
+    }
   }
 }
 
@@ -46,11 +57,22 @@
   display: flex;
   justify-content: right;
   margin-bottom: 10%;
+  @include mixins.breakpoint(XXL, up) {
+    max-width: 1380px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include mixins.breakpoint(XS, down) {
+    justify-content: center;
+  }
 }
 
 #secret-programmer {
-  @include mixins.animate(crop-out, 4s, linear, 0.5s, 1, alternate);
   visibility: hidden;
   color: colors.$green-3;
   font-size: 23rem;
+  @include mixins.animate(crop-out, 4s, linear, 0.5s, 1, alternate);
+  @include mixins.breakpoint(XS, down) {
+    font-size: 15rem;
+  }
 }

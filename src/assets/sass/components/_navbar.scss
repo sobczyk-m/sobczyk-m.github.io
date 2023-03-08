@@ -5,6 +5,9 @@
   font-size: 2rem;
   font-weight: bold;
   padding: 0 18px;
+  @include mixins.breakpoint(XS, down) {
+    font-size: 1.5rem;
+  }
 
   ul {
     @include mixins.ul-global;
