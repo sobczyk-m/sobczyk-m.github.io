@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar"
 function Home(props) {
     return (
         <div>
-            <header id="header">
+            <header className="header">
                 < Navbar active={"nav-home"}/>
             </header>
             <div id={"home-container"}>

@@ -5,7 +5,7 @@ import React from "react"
 function Contact() {
     return (
         <div>
-            <header id="header">
+            <header className="header">
                 < Navbar active={"nav-contact"}/>
             </header>
             <div className={"contact-wrapper"}>

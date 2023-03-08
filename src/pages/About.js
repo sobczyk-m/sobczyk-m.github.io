@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar"
 function About(props) {
     return (
         <div>
-            <header id="header">
+            <header className="header">
                 < Navbar active={"nav-about"}/>
             </header>
             <div className={"bio-wrapper"}>

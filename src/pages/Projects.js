@@ -36,7 +36,7 @@ function Projects() {
 
     return (
         <div>
-            <header id="header">
+            <header className="header">
                 < Navbar active={"nav-projects"}/>
             </header>
             <div className={"projects-wrapper"}>
