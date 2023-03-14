@@ -12,11 +12,9 @@ function About(props) {
                 <div className={"message-container"}>
                     <h1 onAnimationEnd={event => props.onAnimationEnd(event)}>{"< "}Hello World{" />"}</h1>
                     <p id={"paragraph-1"} onAnimationEnd={event => props.onAnimationEnd(event)}>
-                        Hi! I'm Marcin. Just some random guy that loves technology, solving problems and creating stuff.
-                        One day I combined these three factors together and found myself on the programmer path.
+                        Hi! I'm Marcin. Just some random guy who loves technology and creates stuff with it.
                         {"\n"}Currently, I concentrate my efforts on learning the best practices of Web Development and
-                        I spend
-                        my spare time working on personal projects in this field.
+                        I spend my spare time working on personal projects in this field.
                     </p>
                     <p id={"paragraph-2"} onAnimationEnd={event => props.onAnimationEnd(event)}>
                         What’s more about me. I'm a well-organized and self-disciplined person.

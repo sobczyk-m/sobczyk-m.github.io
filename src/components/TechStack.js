@@ -12,11 +12,14 @@ function TechStack(props) {
                 <li><i className="tech-icon fa-brands fa-git-alt">
                     <div className={"tech-name-container"}><p className={"tech-name"}>Git</p></div>
                 </i></li>
-                <li><i className="tech-icon fa-brands fa-html5">
-                    <div className={"tech-name-container"}><p className={"tech-name"}>HTML</p></div>
+                <li><i className="tech-icon fa-brands fa-sass">
+                    <div className={"tech-name-container"}><p className={"tech-name"}>CSS</p></div>
                 </i></li>
                 <li><i className="tech-icon fa-brands fa-css3-alt">
                     <div className={"tech-name-container"}><p className={"tech-name"}>CSS</p></div>
+                </i></li>
+                <li><i className="tech-icon fa-brands fa-html5">
+                    <div className={"tech-name-container"}><p className={"tech-name"}>HTML</p></div>
                 </i></li>
             </ul>
         </div>
