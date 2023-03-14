@@ -14,15 +14,6 @@ const projects = [
         playgroundLink: "https://8mp1o0.csb.app"
     },
     {
-        name: "Quote Machine",
-        description: "Get your life inspired by some random quotes.",
-        techStack: ["React", "JavaScript", "jQuery", "HTML", "CSS"],
-        imageLink: quoteMachine,
-        githubLink: "https://github.com/sobczyk-m/Quote-Machine",
-        codeLink: "https://codesandbox.io/s/8h0wjb",
-        playgroundLink: "https://8h0wjb.csb.app/"
-    },
-    {
         name: "Drum Machine",
         description: "Use the drum machine to produce your own tunes.",
         techStack: ["React", "JavaScript", "HTML", "CSS"],
@@ -30,6 +21,15 @@ const projects = [
         githubLink: "https://github.com/sobczyk-m/Drum-Machine",
         codeLink: "https://codesandbox.io/s/vx5pzu",
         playgroundLink: "https://vx5pzu.csb.app/"
+    },
+    {
+        name: "Quote Machine",
+        description: "Get your life inspired by some random quotes.",
+        techStack: ["React", "JavaScript", "jQuery", "HTML", "CSS"],
+        imageLink: quoteMachine,
+        githubLink: "https://github.com/sobczyk-m/Quote-Machine",
+        codeLink: "https://codesandbox.io/s/8h0wjb",
+        playgroundLink: "https://8h0wjb.csb.app/"
     },
     {
         name: "Markdown Previewer",
