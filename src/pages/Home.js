@@ -19,7 +19,7 @@ function Home(props) {
                 </div>
                 <div id={"introduction-2"} onAnimationEnd={event => props.onAnimationEnd(event)}>
                     <h3>
-                        I am self taught Front-End Developer
+                        I am self taught Software Developer
                     </h3>
                 </div>
             </div>
