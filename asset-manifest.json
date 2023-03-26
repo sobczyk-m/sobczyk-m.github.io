@@ -1,20 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.54dca48d.css",
-    "main.js": "/static/js/main.ba5e0d69.js",
+    "main.js": "/static/js/main.93a0cd08.js",
     "static/js/787.749b4a44.chunk.js": "/static/js/787.749b4a44.chunk.js",
-    "static/media/Author-photo.jpg": "/static/media/Author-photo.16fd2fd9891e047697c2.jpg",
-    "static/media/Markdown-Previewer.png": "/static/media/Markdown-Previewer.f1688a2ede4ef954ee5f.png",
-    "static/media/Calculator.png": "/static/media/Calculator.475089c1bc98d57e8b1b.png",
-    "static/media/Drum-Machine.png": "/static/media/Drum-Machine.36e1fc631dd8125ae3e5.png",
-    "static/media/Quote-Machine.png": "/static/media/Quote-Machine.3deb2fea7810ab4d3ca3.png",
+    "static/media/Author-photo.jpg": "/static/media/Author-photo.752707f0c34dd59a04bf.jpg",
+    "static/media/Markdown-Previewer.png": "/static/media/Markdown-Previewer.8ef8557fa01ccf226ac4.png",
+    "static/media/Drum-Machine.png": "/static/media/Drum-Machine.8c62bcc4faa0f6d75aee.png",
+    "static/media/Calculator.png": "/static/media/Calculator.6ea30d0f9c90c996c8f5.png",
     "index.html": "/index.html",
     "main.54dca48d.css.map": "/static/css/main.54dca48d.css.map",
-    "main.ba5e0d69.js.map": "/static/js/main.ba5e0d69.js.map",
+    "main.93a0cd08.js.map": "/static/js/main.93a0cd08.js.map",
     "787.749b4a44.chunk.js.map": "/static/js/787.749b4a44.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.54dca48d.css",
-    "static/js/main.ba5e0d69.js"
+    "static/js/main.93a0cd08.js"
   ]
 }
