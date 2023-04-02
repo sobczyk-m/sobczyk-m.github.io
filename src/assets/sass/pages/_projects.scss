@@ -130,6 +130,10 @@
   @include mixins.breakpoint(XS, down) {
     padding: 0 25px 10px 25px;
   }
+
+  #github {
+    margin-right: auto;
+  }
 }
 
 .project-icon {

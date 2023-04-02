@@ -2,8 +2,17 @@ import quoteMachine from "../assets/images/Quote-Machine.png"
 import markdownPreviewer from "../assets/images/Markdown-Previewer.png"
 import drumMachine from "../assets/images/Drum-Machine.png"
 import calculator from "../assets/images/Calculator.png"
+import weatherApp from "../assets/images/Weather-App.png"
 
 const projects = [
+    {
+        name: "Weather App",
+        description: "Check the weather conditions for the next 8 days",
+        techStack: ["React", "TypeScript", "Redux", "PostCSS", "HTML", "CSS"],
+        imageLink: weatherApp,
+        githubLink: "https://github.com/sobczyk-m/Weather-App",
+        playgroundLink: "https://sobczyk-m-weather-app.netlify.app/"
+    },
     {
         name: "Calculator",
         description: "Make your life much easier with this simple calculator",
