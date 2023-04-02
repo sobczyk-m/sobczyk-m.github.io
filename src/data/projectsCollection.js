@@ -7,7 +7,7 @@ import weatherApp from "../assets/images/Weather-App.png"
 const projects = [
     {
         name: "Weather App",
-        description: "Check the weather conditions for the next 8 days",
+        description: "Check the weather conditions anywhere in the world",
         techStack: ["React", "TypeScript", "Redux", "PostCSS", "HTML", "CSS"],
         imageLink: weatherApp,
         githubLink: "https://github.com/sobczyk-m/Weather-App",
