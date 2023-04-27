@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.f16cd57b.css",
-    "main.js": "/static/js/main.1dae3182.js",
+    "main.js": "/static/js/main.204970fc.js",
     "static/js/787.749b4a44.chunk.js": "/static/js/787.749b4a44.chunk.js",
-    "static/media/Author-photo.jpg": "/static/media/Author-photo.752707f0c34dd59a04bf.jpg",
+    "static/media/Author-photo.jpg": "/static/media/Author-photo.db832b164fd856f5fa97.jpg",
     "static/media/Weather-App.png": "/static/media/Weather-App.a598f2536f1fda9f37e4.png",
     "static/media/Markdown-Previewer.png": "/static/media/Markdown-Previewer.8ef8557fa01ccf226ac4.png",
     "static/media/Drum-Machine.png": "/static/media/Drum-Machine.8c62bcc4faa0f6d75aee.png",
     "static/media/Calculator.png": "/static/media/Calculator.6ea30d0f9c90c996c8f5.png",
     "index.html": "/index.html",
     "main.f16cd57b.css.map": "/static/css/main.f16cd57b.css.map",
-    "main.1dae3182.js.map": "/static/js/main.1dae3182.js.map",
+    "main.204970fc.js.map": "/static/js/main.204970fc.js.map",
     "787.749b4a44.chunk.js.map": "/static/js/787.749b4a44.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f16cd57b.css",
-    "static/js/main.1dae3182.js"
+    "static/js/main.204970fc.js"
   ]
 }
