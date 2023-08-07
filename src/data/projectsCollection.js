@@ -26,7 +26,7 @@ const projects = [
     {
         name: "Personal Website",
         description: "Visit my personal website to learn more about me and my work",
-        techStack: ["React", "JavaScript", "SCSS", "HTML", "CSS"],
+        techStack: ["React", "JavaScript", "SASS", "HTML", "CSS"],
         imageLink: personalWebsite,
         githubLink: "https://github.com/sobczyk-m/sobczyk-m.github.io",
         playgroundLink: "https://sobczyk-m.github.io/"
