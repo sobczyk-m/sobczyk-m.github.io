@@ -3,6 +3,7 @@ import markdownPreviewer from "../assets/images/Markdown-Previewer.png"
 import drumMachine from "../assets/images/Drum-Machine.png"
 import calculator from "../assets/images/Calculator.png"
 import weatherApp from "../assets/images/Weather-App.png"
+import personalWebsite from "../assets/images/Personal-Website.png"
 
 const projects = [
     {
@@ -21,6 +22,14 @@ const projects = [
         githubLink: "https://github.com/sobczyk-m/Calculator",
         codeLink: "https://codesandbox.io/s/8mp1o0",
         playgroundLink: "https://8mp1o0.csb.app"
+    },
+    {
+        name: "Personal Website",
+        description: "Visit my personal website to learn more about me and my work",
+        techStack: ["React", "JavaScript", "SCSS", "HTML", "CSS"],
+        imageLink: personalWebsite,
+        githubLink: "https://github.com/sobczyk-m/sobczyk-m.github.io",
+        playgroundLink: "https://sobczyk-m.github.io/"
     },
     {
         name: "Drum Machine",
