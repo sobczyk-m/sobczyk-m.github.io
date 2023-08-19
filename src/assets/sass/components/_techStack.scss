@@ -8,9 +8,10 @@
   visibility: hidden;
   @include mixins.animate(crop-out, 2s, ease, 3.5s, 1, normal);
 
-  ul {
+  > ul {
     @include mixins.ul-global;
-    gap: 3rem;
+    row-gap: 4rem;
+    column-gap: 3rem;
     font-size: 5rem;
     justify-content: space-evenly;
   }
@@ -30,7 +31,7 @@
   color: colors.$gray-1;
   background-color: colors.$gray-3;
   padding: 3px 15px;
-  margin: 16px 0 0 0;
+  margin: 0;
   border-radius: 16px;
 }
 

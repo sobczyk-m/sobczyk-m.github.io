@@ -1,29 +1,45 @@
+import {FaCss3Alt, FaGitAlt, FaHtml5, FaJava, FaReact} from "react-icons/fa";
+import {SiSpringboot} from "react-icons/si";
+import {IoLogoJavascript} from "react-icons/io5";
+import {IoLogoSass} from "react-icons/io";
+
 function TechStack(props) {
 
     return (
         <div className={"tech-stack"} onAnimationEnd={event => props.onAnimationEnd(event)}>
             <ul>
-                <li><i className="tech-icon fa-brands fa-java">
+                <li className={"tech-icon"}>
+                    <FaJava/>
                     <div className={"tech-name-container"}><p className={"tech-name"}>Java</p></div>
-                </i></li>
-                <li><i className="tech-icon fa-brands fa-square-js">
+                </li>
+                <li className={"tech-icon"}>
+                    <SiSpringboot/>
+                    <div className={"tech-name-container"}><p className={"tech-name"}>Spring Boot</p></div>
+                </li>
+                <li className={"tech-icon"}>
+                    <IoLogoJavascript/>
                     <div className={"tech-name-container"}><p className={"tech-name"}>JavaScript</p></div>
-                </i></li>
-                <li><i className="tech-icon fa-brands fa-react">
-                    <div className={"tech-name-container"}><p className={"tech-name"}>React</p></div>
-                </i></li>
-                <li><i className="tech-icon fa-brands fa-sass">
-                    <div className={"tech-name-container"}><p className={"tech-name"}>CSS</p></div>
-                </i></li>
-                <li><i className="tech-icon fa-brands fa-css3-alt">
-                    <div className={"tech-name-container"}><p className={"tech-name"}>CSS</p></div>
-                </i></li>
-                <li><i className="tech-icon fa-brands fa-html5">
-                    <div className={"tech-name-container"}><p className={"tech-name"}>HTML</p></div>
-                </i></li>
-                <li><i className="tech-icon fa-brands fa-git-alt">
+                </li>
+                <li className={"tech-icon"}>
+                    <FaGitAlt/>
                     <div className={"tech-name-container"}><p className={"tech-name"}>Git</p></div>
-                </i></li>
+                </li>
+                <li className={"tech-icon"}>
+                    <FaReact/>
+                    <div className={"tech-name-container"}><p className={"tech-name"}>React</p></div>
+                </li>
+                <li className={"tech-icon"}>
+                    <IoLogoSass/>
+                    <div className={"tech-name-container"}><p className={"tech-name"}>CSS</p></div>
+                </li>
+                <li className={"tech-icon"}>
+                    <FaCss3Alt/>
+                    <div className={"tech-name-container"}><p className={"tech-name"}>CSS</p></div>
+                </li>
+                <li className={"tech-icon"}>
+                    <FaHtml5/>
+                    <div className={"tech-name-container"}><p className={"tech-name"}>HTML</p></div>
+                </li>
             </ul>
         </div>
     )

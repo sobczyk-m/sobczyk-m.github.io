@@ -33,7 +33,7 @@ i {
   color: inherit;
 }
 
-a > i:hover, li > i:hover {
+a > i:hover, li > i:hover, .tech-icon:hover {
   color: #64ffda;
 }
 
@@ -519,12 +519,13 @@ a > i:hover, li > i:hover {
   visibility: hidden;
   animation: crop-out 2s ease 3.5s 1 normal;
 }
-.tech-stack ul {
+.tech-stack > ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 3rem;
+  row-gap: 4rem;
+  column-gap: 3rem;
   font-size: 5rem;
   justify-content: space-evenly;
 }
@@ -543,7 +544,7 @@ a > i:hover, li > i:hover {
   color: #d1d3d7;
   background-color: #464646;
   padding: 3px 15px;
-  margin: 16px 0 0 0;
+  margin: 0;
   border-radius: 16px;
 }
 
