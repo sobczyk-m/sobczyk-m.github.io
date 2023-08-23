@@ -1,5 +1,5 @@
 import {FaCss3Alt, FaGitAlt, FaHtml5, FaJava, FaReact} from "react-icons/fa";
-import {SiSpringboot} from "react-icons/si";
+import {SiKotlin, SiSpringboot} from "react-icons/si";
 import {IoLogoJavascript} from "react-icons/io5";
 import {IoLogoSass} from "react-icons/io";
 import {TbSql} from "react-icons/tb";
@@ -12,6 +12,10 @@ function TechStack(props) {
                 <li className={"tech-icon"}>
                     <FaJava/>
                     <div className={"tech-name-container"}><p className={"tech-name"}>Java</p></div>
+                </li>
+                <li className={"tech-icon"}>
+                    <SiKotlin />
+                    <div className={"tech-name-container"}><p className={"tech-name"}>Kotlin</p></div>
                 </li>
                 <li className={"tech-icon"}>
                     <SiSpringboot/>
