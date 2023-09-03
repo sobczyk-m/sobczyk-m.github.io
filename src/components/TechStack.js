@@ -3,6 +3,7 @@ import {SiKotlin, SiSpringboot} from "react-icons/si";
 import {IoLogoJavascript} from "react-icons/io5";
 import {IoLogoSass} from "react-icons/io";
 import {TbSql} from "react-icons/tb";
+import {TfiAndroid} from "react-icons/tfi";
 
 function TechStack(props) {
 
@@ -14,16 +15,12 @@ function TechStack(props) {
                     <div className={"tech-name-container"}><p className={"tech-name"}>Java</p></div>
                 </li>
                 <li className={"tech-icon"}>
-                    <SiKotlin />
+                    <SiKotlin/>
                     <div className={"tech-name-container"}><p className={"tech-name"}>Kotlin</p></div>
                 </li>
                 <li className={"tech-icon"}>
-                    <SiSpringboot/>
-                    <div className={"tech-name-container"}><p className={"tech-name"}>Spring Boot</p></div>
-                </li>
-                <li className={"tech-icon"}>
-                    <TbSql/>
-                    <div className={"tech-name-container"}><p className={"tech-name"}>SQL</p></div>
+                    <TfiAndroid/>
+                    <div className={"tech-name-container"}><p className={"tech-name"}>Android</p></div>
                 </li>
                 <li className={"tech-icon"}>
                     <IoLogoJavascript/>
@@ -32,6 +29,14 @@ function TechStack(props) {
                 <li className={"tech-icon"}>
                     <FaGitAlt/>
                     <div className={"tech-name-container"}><p className={"tech-name"}>Git</p></div>
+                </li>
+                <li className={"tech-icon"}>
+                    <TbSql/>
+                    <div className={"tech-name-container"}><p className={"tech-name"}>SQL</p></div>
+                </li>
+                <li className={"tech-icon"}>
+                    <SiSpringboot/>
+                    <div className={"tech-name-container"}><p className={"tech-name"}>Spring Boot</p></div>
                 </li>
                 <li className={"tech-icon"}>
                     <FaReact/>
