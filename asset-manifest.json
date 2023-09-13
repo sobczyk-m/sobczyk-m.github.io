@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.19f6a69a.css",
-    "main.js": "/static/js/main.fd01fec3.js",
+    "main.js": "/static/js/main.13061ca7.js",
     "static/js/787.749b4a44.chunk.js": "/static/js/787.749b4a44.chunk.js",
     "static/media/Author-photo.jpg": "/static/media/Author-photo.db832b164fd856f5fa97.jpg",
+    "static/media/Simple-Days-Counter.png": "/static/media/Simple-Days-Counter.613a1dfd1013e37e906b.png",
     "static/media/Weather-App.png": "/static/media/Weather-App.a598f2536f1fda9f37e4.png",
     "static/media/Personal-Website.png": "/static/media/Personal-Website.3f7a1306688b4650e0ed.png",
     "static/media/Calculator.png": "/static/media/Calculator.6ea30d0f9c90c996c8f5.png",
     "index.html": "/index.html",
     "main.19f6a69a.css.map": "/static/css/main.19f6a69a.css.map",
-    "main.fd01fec3.js.map": "/static/js/main.fd01fec3.js.map",
+    "main.13061ca7.js.map": "/static/js/main.13061ca7.js.map",
     "787.749b4a44.chunk.js.map": "/static/js/787.749b4a44.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.19f6a69a.css",
-    "static/js/main.fd01fec3.js"
+    "static/js/main.13061ca7.js"
   ]
 }
