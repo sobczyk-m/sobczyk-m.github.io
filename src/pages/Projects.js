@@ -26,8 +26,9 @@ function Projects() {
                         {project.codeLink ?
                             <a href={project.codeLink} rel="noreferrer" target={"_blank"}
                                style={middleIconStyle}><i className="fa-solid fa-code project-icon"></i></a> : null}
-                        <a href={project.playgroundLink} rel="noreferrer" target={"_blank"}><i
-                            className="fa-solid fa-up-right-from-square project-icon"></i></a>
+                        {project.playgroundLink ?
+                            <a href={project.playgroundLink} rel="noreferrer" target={"_blank"}><i
+                                className="fa-solid fa-up-right-from-square project-icon"></i></a> : null}
                     </div>
                     <img className={"project-image"} src={project.imageLink} alt="Project preview"/>
                 </li>

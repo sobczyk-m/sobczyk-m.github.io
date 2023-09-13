@@ -4,6 +4,7 @@
 import calculator from "../assets/images/Calculator.png"
 import weatherApp from "../assets/images/Weather-App.png"
 import personalWebsite from "../assets/images/Personal-Website.png"
+import simpleDaysCounter from "../assets/images/Simple-Days-Counter.png"
 
 const projects = [
     {
@@ -12,6 +13,7 @@ const projects = [
         techStack: ["React", "TypeScript", "Redux", "PostCSS", "HTML", "CSS"],
         imageLink: weatherApp,
         githubLink: "https://github.com/sobczyk-m/Weather-App",
+        codeLink: null,
         playgroundLink: "https://sobczyk-m-weather-app.netlify.app/"
     },
     {
@@ -29,7 +31,17 @@ const projects = [
         techStack: ["React", "JavaScript", "SASS", "HTML", "CSS"],
         imageLink: personalWebsite,
         githubLink: "https://github.com/sobczyk-m/sobczyk-m.github.io",
+        codeLink: null,
         playgroundLink: "https://sobczyk-m.github.io/"
+    },
+    {
+        name: "Simple Days Counter",
+        description: "A simple Android application to store and remind you of important dates in your life",
+        techStack: ["Kotlin", "Room", "Android"],
+        imageLink: simpleDaysCounter,
+        githubLink: "https://github.com/sobczyk-m/simple-days-counter",
+        codeLink: null,
+        playgroundLink: null
     }
     // {
     //     name: "Drum Machine",
