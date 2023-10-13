@@ -20,9 +20,10 @@ function About(props) {
                         What’s more about me. I'm a well-organized and self-disciplined person.
                         I enjoy working in a team and I'm not afraid of working on independent tasks.
                     </p>
-                    <p id={"paragraph-3"} onAnimationEnd={event => props.onAnimationEnd(event)}>I'm looking for
-                        professional opportunities in developer positions that will allow me to work on
-                        interesting projects.</p>
+                    <p id={"paragraph-3"} onAnimationEnd={event => props.onAnimationEnd(event)}>
+                        Eagerly seeking professional opportunities in developer positions where I can put my abilities
+                        to use and learn new ones.
+                        </p>
                     <p id={"paragraph-4"} onAnimationEnd={event => props.onAnimationEnd(event)}>My Tech Stack:</p>
                     <TechStack onAnimationEnd={event => props.onAnimationEnd(event)}/>
                 </div>
