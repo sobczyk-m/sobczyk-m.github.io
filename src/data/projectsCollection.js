@@ -5,8 +5,18 @@ import calculator from "../assets/images/Calculator.png"
 import weatherApp from "../assets/images/Weather-App.png"
 import personalWebsite from "../assets/images/Personal-Website.png"
 import simpleDaysCounter from "../assets/images/Simple-Days-Counter.png"
+import backendApp from "../assets/images/Backend-App.png"
 
 const projects = [
+    {
+        name: "Animal Shelter",
+        description: "This application serves as the backend for managing an animal shelter.",
+        techStack: ["Spring Boot 3", "Java 21", "MySQL 8", "JWT", "JUnit 5", "Maven"],
+        imageLink: backendApp,
+        githubLink: "https://github.com/sobczyk-m/animal-shelter-server",
+        codeLink: null,
+        playgroundLink: null
+    },
     {
         name: "Weather App",
         description: "Check the weather conditions anywhere in the world",
