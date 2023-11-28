@@ -11,7 +11,7 @@ const projects = [
     {
         name: "Animal Shelter",
         description: "This application serves as the backend for managing an animal shelter.",
-        techStack: ["Spring Boot 3", "Java 21", "MySQL 8", "JWT", "JUnit 5", "Maven"],
+        techStack: ["Spring Boot 3", "Java 21", "MySQL 8", "JWT", "JUnit 5", "Mockito", "Maven"],
         imageLink: backendApp,
         githubLink: "https://github.com/sobczyk-m/animal-shelter-server",
         codeLink: null,
