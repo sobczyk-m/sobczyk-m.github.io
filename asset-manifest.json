@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.06d272b2.css",
-    "main.js": "/static/js/main.0f8d0698.js",
+    "main.js": "/static/js/main.c0bf15af.js",
     "static/js/496.40700b11.chunk.js": "/static/js/496.40700b11.chunk.js",
     "static/media/Author-photo.jpg": "/static/media/Author-photo.db832b164fd856f5fa97.jpg",
     "static/media/Simple-Days-Counter.png": "/static/media/Simple-Days-Counter.a12cc4555b8822f30b0d.png",
@@ -11,11 +11,11 @@
     "static/media/Calculator.png": "/static/media/Calculator.6ea30d0f9c90c996c8f5.png",
     "index.html": "/index.html",
     "main.06d272b2.css.map": "/static/css/main.06d272b2.css.map",
-    "main.0f8d0698.js.map": "/static/js/main.0f8d0698.js.map",
+    "main.c0bf15af.js.map": "/static/js/main.c0bf15af.js.map",
     "496.40700b11.chunk.js.map": "/static/js/496.40700b11.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.06d272b2.css",
-    "static/js/main.0f8d0698.js"
+    "static/js/main.c0bf15af.js"
   ]
 }
